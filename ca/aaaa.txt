@@ -1,0 +1,110 @@
+elments elements
+"l'antiguetat" "l'antiguitat"
+antiguetat antiguitat
+Antiguetat Antiguitat
+"l'antigüetat" "l'antiguitat"
+antigüetat antiguitat
+Antigüetat Antiguitat
+préviament prèviament
+"l'ènfasi" "l'emfasi"
+ènfasi èmfasi
+"probabilitat de que" "probabilitat que"
+"probabilitat de què" "probabilitat que"
+"de que diposen" "de què diposen"
+"de que disposa" "de què disposa"
+"de que disposava" "de què disposava"
+"de que disposaven" "de què disposaven"
+"de que va disposar" "de què va disposar"
+"de que disposà" "de què disposà"
+"malgrat de que" "malgrat que"
+"Malgrat de que" "Malgrat que"
+"a part de que" "a part que"
+"A part de que" "A part que"
+"es basen en que" "es basen en el fet que"
+"Es basen en que" "Es basen en el fet que"
+"difereix en què" "difereix en el fet que"
+"difereixen en què" "difereixen en el fet que"
+"difereix en que" "difereix en el fet que"
+"difereixen en que" "difereixen en el fet que"
+"Difereix en què" "Difereix en el fet que"
+"Difereixen en què" "Difereixen en el fet que"
+"Difereix en que" "Difereix en el fet que"
+"Difereixen en que" "Difereixen en el fet que"
+"diferencia en què" "diferencia en el fet que"
+"diferencien en què" "diferencien en el fet que"
+"diferencien en que" "diferencien en el fet que"
+"l'ingrès" "l'ingrés"
+"s’obtè" "s'obté"
+"s'obtè" "s'obté"
+"S'obtè" "S'obté"
+"coincideix en què" "coincideix que"
+"coincideix en que" "coincideix que"
+"coincideixen en què" "coincideixen que"
+"coincideixen en que" "coincideixen que"
+"va coincidir en que" "va coincidir que"
+"van coincidir en que" "va coincidir que"
+"se centra en què" "se centra en el fet que"
+"insisteix en què" "insisteix que"
+"insisteix en que" "insisteix que"
+"insistir en què" "insistir que"
+"insistir en que" "insistir que"
+"rau en que" "rau en el fet que"
+"està en què" "està en el fet que"
+"està en que" "està en el fet que"
+"estava en què" "estava en el fet que"
+"estava en que" "estava en el fet que"
+"Es basa en què" "Es basa en el fet que"
+"es basa en què" "es basa en el fet que"
+"Es basa en que" "Es basa en el fet que"
+"es basa en que" "es basa en el fet que"
+"en que els" "en què els"
+"en que hi" "en què hi"
+"en que li" "en què li"
+"en que ho" "en què ho"
+"en que més" "en què més"
+"Consisteix en què" "Consisteix que"
+"consisteix en què" "consisteix que"
+"Consisteix en que" "Consisteix que"
+"consisteix en que" "consisteix que"
+técnics tècnics
+Técnics Tècnics
+técnic tècnic
+Técnic Tècnic
+ascendre ascendir
+descendre descendir
+técniques tècniques
+Técniques Tècniques
+"conscient de que" "conscient que"
+"conscient de què" "conscient que"
+"consciència de què" "consciència que"
+"consciència de que" "consciència que"
+"per por de què" "per por que"
+"por de que" "por que"
+tecnologíes tecnologies
+entar entrar
+"\b([Ll])a ('''[Ee]sglésia)" "\1'\2" "\"la església\""
+"\b([Ll])a \[\[([Ee]sglésia)([^|\]]*)\]\]" "\1'[[\2\3]]" "\"la església\""
+"\b([Ll])a \[\[([^|\]]+\|)([Ee]sglésia)([^|\]]*)\]\]" "\1'[[\2\3\4]]" "\"la església\""
+"la església" "l'església"
+"La església" "L'església"
+"la Església" "l'Església"
+"La església" "L'església"
+"(\d) hà\b" "\1 ha" "\"hà\"" 
+Masachusetts Massachusetts
+Masachussets Massachusetts
+Masachussetts Massachusetts
+Aument Augment
+aument augment
+auments augments
+"l'aument" "l'augment"
+"va aumentar" "va augmentar"
+"van aumentar" "van augmentar"
+aumentat augmentat
+aumentats augmentats
+2ón 2n
+2òn 2n
+2ons 2ns
+2ona 2a
+2ones 2es
+ámbit àmbit
+"l'ámbit" "l'àmbit"

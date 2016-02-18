@@ -1,0 +1,7 @@
+env/
+core/
+*~
+*.log
+*.bz2
+cawiki-*
+index-dir/
