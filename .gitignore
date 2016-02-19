@@ -5,3 +5,4 @@ core/
 *.bz2
 cawiki-*
 index-dir/
+.*results.txt
