@@ -6,3 +6,4 @@ core/
 cawiki-*
 index-dir/
 .*results.txt
+*.xml

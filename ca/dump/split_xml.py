@@ -1,8 +1,8 @@
 import os
 import bz2
 
-def split_xml(filename):
-    ''' The function gets the filename of wiktionary.xml file as  input and creates
+def split_xml(filename, pages_per_chunk):
+    ''' The function gets the filename of wiktionary.xml file as input and creates
     smallers chunks of it in a the diretory chunks
     '''
     # Check and create chunk diretory
@@ -56,7 +56,7 @@ def split_xml(filename):
             chunkfile.write(idline)
             chunkfile.write(line)
             inpage = True
-        if pagecount > 82999:
+        if pagecount > pages_per_chunk:
             #print chunkname() # For Debugging
             chunkfile.close()
             pagecount = 0 # RESET pagecount
@@ -70,4 +70,4 @@ def split_xml(filename):
 
 if __name__ == '__main__':
     # When the script is self run
-    split_xml('cawiki-20131011-pages-articles.xml')
+    split_xml('cawiki-latest-pages-articles.xml', 130000)
