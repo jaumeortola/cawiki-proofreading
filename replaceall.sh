@@ -7,9 +7,9 @@ exceptinside=`cat $language_dir/exceptinside.cfg`
 if [ "$#" -eq 2 ]; then
     summary=`echo "Corregit: -$1 +$2"`
     summary="${summary//log/l_g}"
-    python ~/pywikibot-core/pwb.py replace -ns:0 -search:"\"$1\"" "\b$1\b" "$2" -regex -excepttitle:"$excepttitle" -exceptinside:"$exceptinside" -exceptinsidetag:hyperlink -always -summary:"$summary"
+    python ~/pywikibot-core/pwb.py replace -ns:0 -search:"\"$1\"" "\b$1\b" "$2" -regex -excepttitle:"$excepttitle" -exceptinside:"$exceptinside" -exceptinsidetag:hyperlink -exceptinsidetag:pre -exceptinsidetag:source -always -summary:"$summary"
 fi
 if [ "$#" -eq 3 ]; then
     summary=`echo "Corregit: -$3"`
-    python ~/pywikibot-core/pwb.py replace -ns:0 -search:"$3" "$1" "$2" -regex -excepttitle:"$excepttitle" -exceptinside:"$exceptinside" -exceptinsidetag:hyperlink -always -summary:"$summary"
+    python ~/pywikibot-core/pwb.py replace -ns:0 -search:"$3" "$1" "$2" -regex -excepttitle:"$excepttitle" -exceptinside:"$exceptinside" -exceptinsidetag:hyperlink -exceptinsidetag:pre -exceptinsidetag:source -always -summary:"$summary"
 fi

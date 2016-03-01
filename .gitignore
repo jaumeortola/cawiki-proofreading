@@ -1,9 +1,9 @@
-env/
-core/
+dump-data/
 *~
 *.log
 *.bz2
-cawiki-*
 index-dir/
 .*results.txt
-*.xml
+bot_*
+sentences_*
+bot.txt

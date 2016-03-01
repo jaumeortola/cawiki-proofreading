@@ -1,2 +1,2 @@
 ./kill-bot.sh
-./list-replaceall.sh >>log.log 2>&1 &
+./list-replaceall.sh >>bot.log 2>&1 &

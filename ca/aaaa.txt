@@ -1,3 +1,92 @@
+imprimit imprès
+imprimits impresos
+imprimides impreses
+"\b([Rr]econ)(tru.+)\b" "\1s\2" "recontruir"
+"\b([Tt]ran)(form.+)\b" "\1s\2" "tranformar"
+"0º" "0°"
+"360 º" "360°"
+sequència seqüència
+Sequència Seqüència
+sequències seqüències
+"es trova" "es troba"
+"es troven" "es troben"
+"es trobem" "es troben"
+movilitat mobilitat
+Movilitat Mobilitat
+"\b([Dd]es)(alinitz.*)\b" "\1s\2" "desalinitzar"
+"\b([Mm]o)v(ilitz.*)\b" "\1b\2" "movilitzar"
+ambdòs ambdós
+Ambdòs Ambdós
+"km2" "km²"
+"entre d'altres coses" "entre altres coses"
+"entre d'altres obres" "entre altres obres"
+rerapaís rerepaís
+"banda ample" "banda ampla"
+"es reflexen" "es reflecteixen"
+"es reflexa en" "es reflecteix en"
+"\b([Dd]i)(seny.*)\b" "\1s\2" "disenyar"
+confón confon
+"té noticia" "té notícia"
+"té constancia" "té constància"
+"pretext de que" "pretext que"
+"creença de que" "creença que"
+"probabilitat de que" "probabilitat que"
+"possibilitat de que" "possibilitat que"
+"s'utilitzan" "s'utilitzen"
+"S'utilitzan" "S'utilitzen"
+"1ª versió" "1a versió"
+"2ª versió" "2a versió"
+"3ª versió" "3a versió"
+"4ª versió" "4a versió"
+"5ª versió" "5a versió"
+"l'area" "l'àrea"
+"L'area" "L'àrea"
+"l'Area" "l'Àrea"
+calurós calorós
+caluroses caloroses
+concorrer concórrer
+"assabentar de que" "assabentar que"
+"1\.ª edició" "1a edició"
+"2\.ª edició" "2a edició"
+"3\.ª edició" "3a edició"
+"4\.ª edició" "4a edició"
+"5\.ª edició" "5a edició"
+"= *([21][90][0-9]0)s *=" "= \1 =" "\"1920s\""
+"= *([21][90][0-9]0)s *=" "= \1 =" "\"1930s\""
+"= *([21][90][0-9]0)s *=" "= \1 =" "\"1940s\""
+"= *([21][90][0-9]0)s *=" "= \1 =" "\"1950s\""
+"= *([21][90][0-9]0)s *=" "= \1 =" "\"1960s\""
+"= *([21][90][0-9]0)s *=" "= \1 =" "\"1970s\""
+"= *([21][90][0-9]0)s *=" "= \1 =" "\"1980s\""
+"= *([21][90][0-9]0)s *=" "= \1 =" "\"1990s\""
+"= *([21][90][0-9]0)s *=" "= \1 =" "\"2000s\""
+"= *([21][90][0-9]0)s *=" "= \1 =" "\"2010s\""
+"fins a a " "fins a "
+"fins a al " "fins al "
+"citat al +(\[\[[0-9]+\]\])" "citat el \1" "\"citat al\""
+titol títol
+Titol Títol
+titols títols
+Titols Títols
+teletransportació teleportació
+"es possible" "és possible"
+"Es possible" "És possible"
+"1ª edició" "1a edició"
+"2ª edició" "2a edició"
+"3ª edició" "3a edició"
+"4ª edició" "4a edició"
+"5ª edició" "5a edició"
+"amb el nº" "amb el núm."
+"amb el Nº" "amb el núm."
+"s'ensamblen" "s'acoblen"
+"S'ensamblen" "S'acoblen"
+"s'ensambla" "s'acobla"
+"aquella moment" "aquell moment"
+"1a\. edició" "1a edició"
+"2a\. edició" "2a edició"
+"3a\. edició" "3a edició"
+"4a\. edició" "4a edició"
+"5a\. edició" "5a edició"
 "una altre part" "una altra part"
 "p\.ex\.:" "p. ex.:"
 "p\.ex:" "p. ex.:"
