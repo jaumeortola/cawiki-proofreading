@@ -53,7 +53,7 @@ while (my $line = <$fh>) {
 	if ($line =~ /Rule ID: \Q$regla\E(\[\d+\])?$/) {
 #	if ($line =~ /Rule ID: $regla\[[5]\]$/) {
 
-#	if ($line =~ /Rule ID: (A_DIT_HA_DIT|CLOACA|ET_VAU|GRAU_GREU|PER_A_QUE|STATU_QUO|TEMPLAT|UN_MES|VESAR|ACERA|COMA_A|CONCORDANCES_TOT|ESCARBAT|LLINDA_AMB|PEL_CONTRARI|TASSA_TAXA|AMB_QUE|CAMERA_CAMBRA|CONSEQUENT_CONSEGUENT|EN_BROMA|ESTORAR|GRACIES_A|JAJAJA|RESOLVENT_RESOLENT|CALS|CRIDADA|CUINA_A_GAS|DOBLAR_DOBLEGAR|ELA_EL_LA|TAMANY|TITELLA|US_VAS|CEGO|CORSET|DONANT_T_HI|LACRA|QUEDAT_QUEDA|RESITUAR|SOBAT|ARRASTRAR|COQUETO|DISCIPLINAR|DOLAR|FALLAR|FARRAGOS|GENERALITAT|MATERIA_PRIMA|MILER_MILERS|TROMPO|ALMENYS|AL_TEMPS_QUE|BARCA_MAJUSCULES|CONSTAR_COSTAR|DESVETLLAR|DEURE|FA_VA|MASSES|MOTS_SENSE_GUIONETS|OBRAR_OBRIR|OCASIONES|PARTIT_PARTIR|RABET|XULO|ARXIU_ARXIVAMENT|CELEBRAR_CONTRACTE|CONCORDANCES_QUAL|CORESPONSABLE|ESTANT_ESTAN_FENT|GERUNDI_PERD_T|MADRINA|NO_REPETIT|AL_ROIG_VIU|COMTAT|DESCONTENT|DEUS|EL_MES_AVIAT_POSSIBLE|EMPORTAR_SE_PER_DAVANT|FLUIDA|MANER|MA_ABREVIATURA|MEDICAMENT|MES_VAL|MITJAN_EL|SUMA_SUMMA|ANT_ANY|BRONCA|BUSCA|DIFOS_DIFUS|ESPESA_ESPESSA|HELENA|HOSTATGE_OSTATGE|PEL_TERRA|SISPLAU|TENIR_QUE)(\[\d+\])?$/) {
+#	if ($line =~ /Rule ID: (CARGA|NO_MES_NOMES|ESPAIAL|ENTORN_A|BILLO_BILIO|COM_DE_RAPID_ES|DONAR_LESQUENA|PUTXERO|ALOS|DATE_WEEKDAY|DISTINT_A_DIFERENT_DE|ES_POT|POSAR_EN_VALOR|A_POC_DE|NOMBRE_NUMERO|OS_US|URL|APRETAR|PASSAR_PER|COSSA|GRABEN|GENS|PER_SUPOSAT|SANS_SERIF|CAP_COT|NI_NO|PER_A_DESPRES|TARJA|TRESPUNTS_PUNT)(\[\d+\])?$/) {
 
 	    #print $ofh2 "Title: $title\n";
 	    $inregla=1;
@@ -184,9 +184,10 @@ sub Eixida {
 	else {
 
 	    # Intenta fer la substitució de les apostrofacions
-	    if ($suggestion =~ /^([ldLD]['])(.+)$/) {
-		my $sugg1=$1; my $sugg2=$2;
-		$original =~ /(el|El|la|La|de|De) (.+)/;
+	    #print "$suggestion $original\n";
+	    if ($suggestion =~ /^(((A|a|De|de|Per|per) )?[ldLD]['])(.+)$/) {
+		my $sugg1=$1; my $sugg2=$4;
+		$original =~ /(el|El|la|La|de|De|al|Al|del|Del|pel|Pel|DE|AL|EL|PEL|LA) +(.+)/;
 		my $orig1=$1; my $orig2=$2;
 		#print "$orig1 $orig2 $sugg1 $sugg2\n";
 		#print "$context\n"; 
@@ -198,7 +199,7 @@ sub Eixida {
 		    $entremig=$2;
 		    $despres=$3;
 		    my $frasecorregida = "$abans$sugg1$entremig$sugg2$despres";
-		    $frasecorregida =~ s/^(.* [lLdD])''(.*)$/$1\{\{'\}\}'$2/g;
+		    #$frasecorregida =~ s/^(.* [lLdD])''(.*)$/$1\{\{'\}\}'$2/g; ##plantilla apòstrof
 		    #print "$frasecorregida\n";
 
 		    #my $motprevi=$abans;
@@ -211,7 +212,7 @@ sub Eixida {
 		    $substituit=1;
 		}
 	    }
-	    if ($suggestion =~ /^(el|El|la|La|de|De) (.+)$/) {
+	    elsif ($suggestion =~ /^(el|El|la|La|de|De) (.+)$/) {
 		my $sugg1=$1; my $sugg2=$2;
 		$original =~ /([LlDd]['’])(.+)/;
 		my $orig1=$1; my $orig2=$2;
@@ -237,7 +238,7 @@ sub Eixida {
 		}
 	    }
 	    # Intenta fer la substitució de les contraccions
-	    if ($suggestion =~ /^(al|als|del|dels|cal|cals|Al|Als|Del|Dels|Cal|Cals)$/) {
+	    elsif ($suggestion =~ /^(al|als|del|dels|cal|cals|Al|Als|Del|Dels|Cal|Cals)$/) {
 		my $sugg1=$1; #my $sugg2=$2;
 		my $orig1=""; my $orig2="";
 		$original =~ /(a|A|de|De|ca|Ca|d'|D') (el|els|El|Els)/;
@@ -305,4 +306,5 @@ close ($ofh2);
 		print $ofh2 "ACCIÓ ([s]í, [n]o, [f]alsa alarma): revisa f\n\n";
 	    }
 =cut
+
 
