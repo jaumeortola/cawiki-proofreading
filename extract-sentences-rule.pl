@@ -177,10 +177,10 @@ sub Eixida {
 
 	    $clauordenacio{$n}="$suggestion$despres";
 	    push (@corregit, $frasecorregida);
-	    push (@accio, "s");
+	    push (@accio, "y");
 	    $substituit=1;
 	} 
-=pod
+
 	else {
 
 	    # Intenta fer la substitució de les apostrofacions
@@ -208,7 +208,7 @@ sub Eixida {
 
 		    $clauordenacio{$n}="$sugg1$sugg2$despres";
 		    push (@corregit, $frasecorregida);
-		    push (@accio, "s");
+		    push (@accio, "y");
 		    $substituit=1;
 		}
 	    }
@@ -233,7 +233,7 @@ sub Eixida {
 
 		    $clauordenacio{$n}="$sugg1$sugg2$despres";
 		    push (@corregit, $frasecorregida);
-		    push (@accio, "s");
+		    push (@accio, "y");
 		    $substituit=1;
 		}
 	    }
@@ -264,7 +264,7 @@ sub Eixida {
 		}
 	    }
 	}
-=cut
+
 	if (!$substituit)  {
             $clauordenacio{$n}="   NoTrobat: $original";
 	    push (@corregit, $context);
@@ -277,8 +277,8 @@ sub Eixida {
 
 # EIXIDA
 foreach my $num (sort {$clauordenacio{$a} cmp $clauordenacio{$b}} keys %clauordenacio) {
-    print $ofh2 "$original[$num]|Ẁ|$titol[$num]|Ẁ|$errors[$num]|Ẁ|$suggeriments[$num]\n";
-    print $ofh2 "$corregit[$num]|Ẁ|$accio[$num]\n\n";
+    print $ofh2 "$original[$num]<|>$titol[$num]<|>$errors[$num]<|>$suggeriments[$num]\n";
+    print $ofh2 "$corregit[$num]<|>$accio[$num]\n\n";
 }
 
 close ($fh);

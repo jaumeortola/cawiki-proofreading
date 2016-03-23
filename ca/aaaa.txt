@@ -1,3 +1,17 @@
+"l'ubicació" "la ubicació"
+rebelió "rebel·lió"
+Rebelió "Rebel·lió"
+rebelions "rebel·lions"
+principament principalment
+"la cituat" "la ciutat"
+"una cituat" "una ciutat"
+"altra cituat" "altra ciutat"
+caracterítiques característiques
+Caracterítiques Característiques
+caracterítica característica
+caracterísiques característiques
+Caracterísiques Característiques
+"línia de comandaments" "línia d'ordres"
 aborígen aborigen
 aborigens aborígens
 "l'atmòsfera" "l'atmosfera"

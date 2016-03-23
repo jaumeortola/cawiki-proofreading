@@ -42,17 +42,17 @@ my $liniaRef=0;
 
 while (my $line = <$fh>) {
     chomp($line);
-    if ($line =~ /^(.+)\|Ẁ\|(.+)\|Ẁ\|(.+)\|Ẁ\|(.+)$/) {
+    if ($line =~ /^(.+)<\|>(.+)<\|>(.+)<\|>(.+)$/) {
 	$context=$1;
 	$title=$2;
 	$error=$3;
 	$suggestion=$4;
 #	print "$title\n";
-    } elsif ($line =~ /^(.+)\|Ẁ\|([^Ẁ]+)$/) {
+    } elsif ($line =~ /^(.+)<\|>([yn])$/) {
 	$correcte=$1;
 	$accio=$2;
 #	print "$correcte\n";
-	if ($accio =~/^s$/) {
+	if ($accio =~/^y$/) {
 	    &Eixida();
 	}
     }
@@ -60,7 +60,7 @@ while (my $line = <$fh>) {
 }
 
 sub Eixida {
-  if ($accio eq 's') {
+  if ($accio eq 'y') {
     my $merged = String::Diff::diff_merge($context, $correcte);
 #    print $merged;
     my $abans=""; my $despres="";
@@ -85,7 +85,7 @@ sub Eixida {
 	}
 	$abans =~ s/^.+(.{20})$/$1/;
 	$despres =~ s/^(.{20}).+$/$1/;
-	print $ofh "$title|Ẁ|$abans|Ẁ|$old|Ẁ|$despres|Ẁ|$new\n";
+	print $ofh "$title<|>$abans<|>$old<|>$despres<|>$new\n";
     }
   }
 }
