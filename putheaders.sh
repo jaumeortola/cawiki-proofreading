@@ -1,5 +1,5 @@
 #!/bin/bash
-files="./chunks/*.xml"
+files="./dump-data/chunks/*.xml"
 for f in $files
 do
     cat ./wikihead.xml $f wikitail.xml > "$f.xml"
