@@ -6,8 +6,8 @@ use utf8;
 
 binmode( STDOUT, ":utf8" );
 
-my $inputfilename = "dump-data/cawiki-latest-pages-articles.xml";
-my $outputfilename = "dump-data/list.txt";
+my $inputfilename = "dump-data-old/cawiki-latest-pages-articles.xml";
+my $outputfilename = "dump-data-old/list.txt";
 
 open( my $fh,  "<:encoding(UTF-8)", $inputfilename );
 open( my $ofh,  ">:encoding(UTF-8)", $outputfilename );
@@ -26,7 +26,7 @@ while (my $line = <$fh>) {
 	$ns = $1;
     }
     if ($found == 0 && $ns == 0) { 
-	if ($line =~ /([dDlL]'+\[\[[^\]]+\|\s+[^\]]+\]\])/) {
+	if ($line =~ /(Estats units|estats Units)/) {
 	    my $word= $1;
 	    print $ofh "$word\n";
 	    print $ofh "ARTICLE: $title\n";
@@ -35,6 +35,7 @@ while (my $line = <$fh>) {
 	}
     }
 }
+#	if ($line =~ /([dDlL]'+\[\[[^\]]+\|\s+[^\]]+\]\])/) {
 # 	if ($line =~ /(&lt;\/ref&gt;[\w]+)/ ) {
 # 	if ($line =~ /\b([\w'’·]+(l ?∙ ?l)[\w'’·]+)\b/ ) {
 #	if ($line =~ /\b(Sud-Àfrica|[Ll]a Península Ibèrica)\b/) {

@@ -20,7 +20,7 @@ binmode( STDOUT, ":utf8" );
 my $regla=$ARGV[0];
 
 my $inputfilename = "sentences_$regla.txt";
-my $outputfilename = "bot_$regla.txt";
+my $outputfilename = "bot.txt"; #"bot_$regla.txt";
 
 open( my $fh,  "<:encoding(UTF-8)", $inputfilename );
 open( my $ofh,  ">:encoding(UTF-8)", $outputfilename );

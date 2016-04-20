@@ -1,3 +1,75 @@
+"amb \[\[Estats Units\]\]" "amb els [[Estats Units]]" "\"amb Estats Units\""
+"amb Estats Units" "amb els Estats Units"
+cal·librar calibrar
+possibiltat possibilitat
+possiblitats possibilitats
+possiblitat possibilitat
+exhuberant exuberant
+exhuberants exuberants
+exhuberància exuberància
+tol·lerar tolerar
+intol·lerant intolerant
+delcaració declaració
+delcaracions declaracions
+"paral\.lel" "paral·lel"
+"paral lel" "paral·lel"
+"paral\.lela" "paral·lela"
+"paral lela" "paral·lela"
+"paral\.lels" "paral·lels"
+"paral lels" "paral·lels"
+"paral\.leles" "paral·leles"
+"paral leles" "paral·leles"
+comunment comunament
+"\b([Dd]es)(alinitz.*)\b" "\1s\2" "desalinitzar"
+"\b([Mm]o)v(ilitz.*)\b" "\1b\2" "movilitzar"
+"\b([Ii]mprovi)tz(.*)\b" "\1s\2" "improvitzar"
+exècit exèrcit
+"se'n feu" "se'n féu"
+titolat titulat
+titolada titulada
+titolats titulats
+titolades titulades
+endevant endavant
+"pel què fa a" "pel que fa a"
+"pel què fa al" "pel que fa al"
+"pel què fa als" "pel que fa als"
+"Pel què fa a" "Pel que fa a"
+"Pel què fa al" "Pel que fa al"
+"Pel què fa als" "Pel que fa als"
+"estan causats" "són causats"
+"estan causades" "són causades"
+"Estan causats" "Són causats"
+"Estan causades" "Són causades"
+"està causat" "és causat"
+"està causada" "és causada"
+"Està causat" "És causat"
+"Està causada" "És causada"
+"està considerat" "és considerat"
+"està considerada" "és considerada"
+"Està considerat" "És considerat"
+"Està considerada" "És considerada"
+extès estès
+extesa estesa
+extesos estesos
+exteses esteses
+"d'extendre" "d'estendre"
+beligerant bel·ligerant
+beligerants bel·ligerants
+seqüencies seqüències
+seqüencia seqüència
+"versió estesa" "versió ampliada"
+"algún tipus" "algun tipus"
+"la orientació" "l'orientació"
+"direcció contraria" "direcció contrària"
+"l'efigie" "l'efígie"
+"d'aillar" "d'aïllar"
+"l'imatge" "la imatge"
+"l'urbanització" "la urbanització"
+"l'inscripció" "la inscripció"
+"l'utilitzada" "la utilitzada"
+"l'unió" "la unió"
+convetir convertir
+converir convertir
 "l'ubicació" "la ubicació"
 rebelió "rebel·lió"
 Rebelió "Rebel·lió"
@@ -73,8 +145,6 @@ sequències seqüències
 "es trobem" "es troben"
 movilitat mobilitat
 Movilitat Mobilitat
-"\b([Dd]es)(alinitz.*)\b" "\1s\2" "desalinitzar"
-"\b([Mm]o)v(ilitz.*)\b" "\1b\2" "movilitzar"
 ambdòs ambdós
 Ambdòs Ambdós
 "km2" "km²"

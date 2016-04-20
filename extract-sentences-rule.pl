@@ -51,7 +51,7 @@ while (my $line = <$fh>) {
     chomp($line);
     if ($line =~ /Rule ID: /) {
 	if ($line =~ /Rule ID: \Q$regla\E(\[\d+\])?$/) {
-#	if ($line =~ /Rule ID: $regla\[[5]\]$/) {
+#	if ($line =~ /Rule ID: $regla\[[1-6]\]$/) {
 
 #	if ($line =~ /Rule ID: (CARGA|NO_MES_NOMES|ESPAIAL|ENTORN_A|BILLO_BILIO|COM_DE_RAPID_ES|DONAR_LESQUENA|PUTXERO|ALOS|DATE_WEEKDAY|DISTINT_A_DIFERENT_DE|ES_POT|POSAR_EN_VALOR|A_POC_DE|NOMBRE_NUMERO|OS_US|URL|APRETAR|PASSAR_PER|COSSA|GRABEN|GENS|PER_SUPOSAT|SANS_SERIF|CAP_COT|NI_NO|PER_A_DESPRES|TARJA|TRESPUNTS_PUNT)(\[\d+\])?$/) {
 
@@ -171,16 +171,16 @@ sub Eixida {
 	    my $despres=$2;
 	    my $frasecorregida = "$abans$suggestion$despres";
 
-	    #my $motprevi=$abans;
-	    #$motprevi =~ s/^.*\b([^\b].+)$/$1/;
-	    #$clauordenacio{$n}="$motprevi$suggestion$despres";
+	    my $motprevi=$abans;
+	    $motprevi =~ s/^.*\b([^\b].+)$/$1/;
+	    $clauordenacio{$n}="$motprevi$suggestion$despres";
 
-	    $clauordenacio{$n}="$suggestion$despres";
+	    #$clauordenacio{$n}="$suggestion$despres";
 	    push (@corregit, $frasecorregida);
 	    push (@accio, "y");
 	    $substituit=1;
 	} 
-
+=pod
 	else {
 
 	    # Intenta fer la substitució de les apostrofacions
@@ -264,7 +264,7 @@ sub Eixida {
 		}
 	    }
 	}
-
+=cut
 	if (!$substituit)  {
             $clauordenacio{$n}="   NoTrobat: $original";
 	    push (@corregit, $context);
