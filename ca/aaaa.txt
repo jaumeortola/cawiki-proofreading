@@ -1,3 +1,7 @@
+erudicció erudició
+"l'erudicció" "l'erudició"
+desensibilització dessensibilització
+sabiesa saviesa
 "amb \[\[Estats Units\]\]" "amb els [[Estats Units]]" "\"amb Estats Units\""
 "amb Estats Units" "amb els Estats Units"
 cal·librar calibrar
