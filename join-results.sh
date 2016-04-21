@@ -1,3 +1,3 @@
 #!/bin/bash
-cat ./chunks/*.results > ./results.txt
+cat ./dump-data/chunks/*.results > ./dump-data/results.txt
 
