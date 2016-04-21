@@ -57,6 +57,13 @@ while (my $line = <$fh>) {
 
 	    #print $ofh2 "Title: $title\n";
 	    $inregla=1;
+            # ignore sentences with some percentage of errors
+            if ($line =~ /ErrorsPerSentence: (.+)%/) {
+		my $percent = $1;
+		if ($percent>9) {
+		    $inregla=0;
+		}
+	    }
 	} else {
 	    #&Eixida();
 	    $inregla=0;
