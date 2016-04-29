@@ -1,3 +1,14 @@
+Enlllaços Enllaços
+"De dalt abaix" "De dalt a baix"
+"De dalt a abaix" "De dalt a baix"
+corrés corregués
+corressin correguessin
+decissivament decisivament
+"Cambra de Representats" "Cambra de Representants"
+"cambra de Representats" "Cambra de Representants"
+"cambra de representats" "Cambra de Representants"
+vegé veié
+"es col loca" "es col·loca"
 erudicció erudició
 "l'erudicció" "l'erudició"
 desensibilització dessensibilització

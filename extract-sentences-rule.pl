@@ -26,6 +26,7 @@ my $longitudabans=0;
 my $passatoriginal=0;
 my $passatsuggestion=0;
 my $linecount=0;
+my $ruleID="";
 
 my %clauordenacio= ();
 my @original;
@@ -42,7 +43,7 @@ my $excepttitle = <$exceptionsfile>;
 close $exceptionsfile;
 
 if (!defined $regla) {
-    $regla="MYRULES";
+    $regla="several";
 }
 
 open( my $ofh2,  ">:encoding(UTF-8)", "sentences_$regla.txt" );
@@ -53,10 +54,11 @@ while (my $line = <$fh>) {
 	if ($line =~ /Rule ID: \Q$regla\E(\[\d+\])?$/) {
 #	if ($line =~ /Rule ID: $regla\[[1-6]\]$/) {
 
-#	if ($line =~ /Rule ID: (CARGA|NO_MES_NOMES|ESPAIAL|ENTORN_A|BILLO_BILIO|COM_DE_RAPID_ES|DONAR_LESQUENA|PUTXERO|ALOS|DATE_WEEKDAY|DISTINT_A_DIFERENT_DE|ES_POT|POSAR_EN_VALOR|A_POC_DE|NOMBRE_NUMERO|OS_US|URL|APRETAR|PASSAR_PER|COSSA|GRABEN|GENS|PER_SUPOSAT|SANS_SERIF|CAP_COT|NI_NO|PER_A_DESPRES|TARJA|TRESPUNTS_PUNT)(\[\d+\])?$/) {
+#	if ($line =~ /Rule ID: (BOBO|TORNAR_A_REFER|BORDAR_BRODAR|I_HI|CONFUSIO_PARTICIPI_INFINITIU|PRONOMS_FEBLES_EL_LI|CONCORDANCA_GRIS|ELS_INFINITIU|ES_POT|LELO|EN_LLOC|A_LHORA_ALHORA|MINORISTA|MOL_MOLT|GLOSAR|GUIO_INCORRECTE|CIMENTS|BAIXAR_ABAIXAR|DECADES|BESTIA)(\[\d+\])?$/) {
 
 	    #print $ofh2 "Title: $title\n";
 	    $inregla=1;
+            $ruleID=$1;
             # ignore sentences with some percentage of errors
             if ($line =~ /ErrorsPerSentence: (.+)%/) {
 		my $percent = $1;
@@ -178,11 +180,12 @@ sub Eixida {
 	    my $despres=$2;
 	    my $frasecorregida = "$abans$suggestion$despres";
 
-	    my $motprevi=$abans;
-	    $motprevi =~ s/^.*\b([^\b].+)$/$1/;
-	    $clauordenacio{$n}="$motprevi$suggestion$despres";
+	    #my $motprevi=$abans;
+	    #$motprevi =~ s/^.*\b([^\b].+)$/$1/;
+	    #$clauordenacio{$n}="$motprevi$suggestion$despres";
 
 	    #$clauordenacio{$n}="$suggestion$despres";
+	    $clauordenacio{$n}="$ruleID$suggestion$despres";
 	    push (@corregit, $frasecorregida);
 	    push (@accio, "y");
 	    $substituit=1;
@@ -273,7 +276,7 @@ sub Eixida {
 	}
 =cut
 	if (!$substituit)  {
-            $clauordenacio{$n}="   NoTrobat: $original";
+            $clauordenacio{$n}="$ruleID   NoTrobat: $original";
 	    push (@corregit, $context);
 	    push (@accio, "n");
 	    #print $ofh2 "$context SuggerimentNoTrobat\n";
@@ -313,5 +316,6 @@ close ($ofh2);
 		print $ofh2 "ACCIÓ ([s]í, [n]o, [f]alsa alarma): revisa f\n\n";
 	    }
 =cut
+
 
 

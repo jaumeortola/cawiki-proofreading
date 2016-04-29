@@ -18,6 +18,9 @@ use String::Diff qw( diff_fully diff diff_merge diff_regexp );# export functions
 binmode( STDOUT, ":utf8" );
 
 my $regla=$ARGV[0];
+if (!defined $regla) {
+    $regla="extracted";
+}
 
 my $inputfilename = "sentences_$regla.txt";
 my $outputfilename = "bot.txt"; #"bot_$regla.txt";
@@ -92,3 +95,6 @@ sub Eixida {
 
 close ($fh);
 close ($ofh);
+
+system("sort bot.txt -o bot.txt");
+system("wc -l bot.txt");
