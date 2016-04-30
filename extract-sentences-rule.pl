@@ -27,6 +27,7 @@ my $passatoriginal=0;
 my $passatsuggestion=0;
 my $linecount=0;
 my $ruleID="";
+my $discard=0;
 
 my %clauordenacio= ();
 my @original;
@@ -59,11 +60,14 @@ while (my $line = <$fh>) {
 	    #print $ofh2 "Title: $title\n";
 	    $inregla=1;
             $ruleID=$1;
+            $discard=0;
+            #print "$line\n";
             # ignore sentences with some percentage of errors
             if ($line =~ /ErrorsPerSentence: (.+)%/) {
 		my $percent = $1;
-		if ($percent>9) {
+		if ($percent>99) {
 		    $inregla=0;
+                    $discard=1;
 		}
 	    }
 	} else {
@@ -96,6 +100,9 @@ while (my $line = <$fh>) {
 
 	if ($linecount == 3) {
 	    $context=$line;
+            if ($discard) {
+		print "$context\n";
+	    }
 	}
 	if ($linecount == 4) {
 	    $passatoriginal=0;
@@ -148,12 +155,12 @@ sub Eixida {
     if ($inregla) {
 	my $substituit=0;
 
-	if ($suggestion =~ /^Aquesta$/) {
-	    $suggestion = "Està";
-	}
-	if ($suggestion =~ /^aquesta$/) {
-	    $suggestion = "està";
-	}
+	#if ($suggestion =~ /^Aquesta$/) {
+	#    $suggestion = "Està";
+	#}
+	#if ($suggestion =~ /^aquesta$/) {
+	#    $suggestion = "està";
+	#}
 
 	## Prepara "formulari"
 	if ($suggestion =~ /^$/) {
