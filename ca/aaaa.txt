@@ -1,3 +1,13 @@
+"a \[\[[Ee]l Vendrell\]\]" "al [[El Vendrell|Vendrell]]" "\"a el Vendrell\""
+"d'\[\[[Ee]l Vendrell\]\]" "del [[El Vendrell|Vendrell]]" "\"d'el Vendrell\""
+"Enllaços externes" "Enllaços externs"
+"Enllaços externa" "Enllaços externs"
+"Enllaços externo" "Enllaços externs"
+"Enllaços Extern" "Enllaços externs"
+"Enllaço extern" "Enllaços externs"
+"mèdul·la" "medul·la"
+sometre sotmetre
+"cosa semblat" "cosa semblant"
 Enlllaços Enllaços
 "De dalt abaix" "De dalt a baix"
 "De dalt a abaix" "De dalt a baix"

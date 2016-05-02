@@ -36,6 +36,7 @@ my @accio;
 my @titol;
 my @errors;
 my @suggeriments;
+#my @discarded;
 
 my $n=-1;
 
@@ -59,15 +60,15 @@ while (my $line = <$fh>) {
 
 	    #print $ofh2 "Title: $title\n";
 	    $inregla=1;
-            $ruleID=$1;
+            $ruleID="$regla$1";
             $discard=0;
             #print "$line\n";
             # ignore sentences with some percentage of errors
             if ($line =~ /ErrorsPerSentence: (.+)%/) {
 		my $percent = $1;
-		if ($percent>99) {
-		    $inregla=0;
-                    $discard=1;
+		if ($percent>100) {
+#		    $inregla=0;
+                    #$discard=1;
 		}
 	    }
 	} else {
@@ -100,9 +101,9 @@ while (my $line = <$fh>) {
 
 	if ($linecount == 3) {
 	    $context=$line;
-            if ($discard) {
-		print "$context\n";
-	    }
+            #if ($discard) {
+	    #	print "$context\n";
+	    #   }
 	}
 	if ($linecount == 4) {
 	    $passatoriginal=0;
@@ -180,7 +181,7 @@ sub Eixida {
 	push (@suggeriments, $suggestion);
         #if ($context =~ /^(.{$l1,$l2})\b$original\b(.*)$/) {
 	#if ($context =~ /^(.{$l1,$l2})\b$original(.*)$/) {
-	if ($context =~ /^(.*)\b\Q$original\E\b(.*)$/ ) {
+	if ($context =~ /^(.*)\b\Q$original\E(.*)$/ ) {
 	#if ($context =~ /^(.*)$original(.*)$/) {
 
 	    my $abans=$1;
@@ -192,9 +193,14 @@ sub Eixida {
 	    #$clauordenacio{$n}="$motprevi$suggestion$despres";
 
 	    #$clauordenacio{$n}="$suggestion$despres";
-	    $clauordenacio{$n}="$ruleID$suggestion$despres";
+	    $clauordenacio{$n}="$discard $ruleID $suggestion$despres";
 	    push (@corregit, $frasecorregida);
-	    push (@accio, "y");
+            if ($discard) {
+		push (@accio, "d");
+	    }
+	    else { 
+		push (@accio, "y");
+	    }
 	    $substituit=1;
 	} 
 =pod
@@ -283,7 +289,7 @@ sub Eixida {
 	}
 =cut
 	if (!$substituit)  {
-            $clauordenacio{$n}="$ruleID   NoTrobat: $original";
+            $clauordenacio{$n}="$discard $ruleID   NoTrobat: $original";
 	    push (@corregit, $context);
 	    push (@accio, "n");
 	    #print $ofh2 "$context SuggerimentNoTrobat\n";
