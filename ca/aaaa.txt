@@ -1,3 +1,24 @@
+caçes caces
+Caçces Caces
+necessitaben necessitaven
+"un promig de" "una mitjana de"
+"No obstant açò" "No obstant això"
+"no obstant açò" "no obstant això"
+"Estafis Square" "Times Square"
+"New York Estafis" "New York Times"
+"Estafis Books" "Times Books"
+"com les quals" "com les que"
+"com els quals" "com els que"
+"com la qual" "com la que"
+"com el qual" "com el que"
+poseïa posseïa
+Poseïa Posseïa
+poseïen posseïen
+Poseïen Posseïen
+poseeix posseeix
+Poseeix Posseeix
+poseeixen posseeixen
+Poseeixen Posseeixen
 "a \[\[[Ee]l Vendrell\]\]" "al [[El Vendrell|Vendrell]]" "\"a el Vendrell\""
 "d'\[\[[Ee]l Vendrell\]\]" "del [[El Vendrell|Vendrell]]" "\"d'el Vendrell\""
 "Enllaços externes" "Enllaços externs"

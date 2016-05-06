@@ -181,12 +181,14 @@ sub Eixida {
 	push (@suggeriments, $suggestion);
         #if ($context =~ /^(.{$l1,$l2})\b$original\b(.*)$/) {
 	#if ($context =~ /^(.{$l1,$l2})\b$original(.*)$/) {
-	if ($context =~ /^(.*)\b\Q$original\E(.*)$/ ) {
+	if ($context =~ /^(.*?)\b\Q$original\E\b(.*)$/ ) {
 	#if ($context =~ /^(.*)$original(.*)$/) {
 
 	    my $abans=$1;
 	    my $despres=$2;
+            #my $frasecorregida = $context;
 	    my $frasecorregida = "$abans$suggestion$despres";
+
 
 	    #my $motprevi=$abans;
 	    #$motprevi =~ s/^.*\b([^\b].+)$/$1/;

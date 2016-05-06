@@ -23,8 +23,12 @@ my $replace_term = $ARGV[1];
 my $summary= "Corregit: ".$search_term;
 my $search = "\"".$search_term."\"";
 
-my $outputfilename = "sentences_extracted.txt"; #"regla_".$search_term.".txt";
+open(my $exceptionsfile,  "<:encoding(UTF-8)", "ca/excepttitle.cfg" );
+my $excepttitle = <$exceptionsfile>;
+close $exceptionsfile;
 
+
+my $outputfilename = "sentences_extracted.txt"; #"regla_".$search_term.".txt";
 open( my $ofh,  ">:encoding(UTF-8)", $outputfilename );
 
 
@@ -42,10 +46,12 @@ foreach (@pages) {
 	my $textoriginal = $text;
 	print "Llegint: ".$title."\n";
 
-#	if (BotLib2::article_editable($title)==0) {
-#	    print "IGNORAT: ".$title."\n";
-#	    next;
-#	}
+        if ($title =~ /$excepttitle/) {
+	    print "IGNORAT: ".$title."\n";
+	    next;
+	}
+
+
 	if ($text =~ /[-\/]$search_term[-\/ ]/) {
 	    print "IGNORAT: ".$title."\n";
 	    next;
