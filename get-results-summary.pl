@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
-use autodie;
+#use autodie;
 use utf8;
 
 binmode( STDOUT, ":utf8" );
