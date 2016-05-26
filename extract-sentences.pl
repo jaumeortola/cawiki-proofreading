@@ -15,7 +15,7 @@ use Encode;
 
 @ARGV = map { decode(locale => $_, 1) } @ARGV;
 
-binmode( STDOUT, ":utf8");
+binmode(STDOUT, ":utf8");
 
 
 my $search_term = $ARGV[0];
@@ -26,6 +26,14 @@ my $search = "\"".$search_term."\"";
 open(my $exceptionsfile,  "<:encoding(UTF-8)", "ca/excepttitle.cfg" );
 my $excepttitle = <$exceptionsfile>;
 close $exceptionsfile;
+
+
+open(my $sentencesexceptionsfile,  "<:encoding(UTF-8)", "ca/sentences-to-ignore" );
+my $sentencestoignore = join ("", <$sentencesexceptionsfile>);
+close $sentencesexceptionsfile;
+
+
+open(SENT_TO_IGNORE,"ca/sentences-to-ignore");
 
 
 my $outputfilename = "sentences_extracted.txt";
@@ -68,12 +76,17 @@ foreach (@pages) {
 	    my $abans = $1;
 	    my $despres = $2;
 
-	    print $ofh "$abans$search_term$despres<|>$title<|>$search_term<|>$replace_term\n";
-	    print $ofh "$abans$replace_term$despres<|>y\n\n";
-	    print "EXTRACTED FROM: ".$title."\n";
+	    if ($sentencestoignore !~ /\Q$abans$search_term$despres\E/) {
+		print $ofh "$abans$search_term$despres<|>$title<|>$search_term<|>$replace_term\n";
+		print $ofh "$abans$replace_term$despres<|>y\n\n";
+		print "EXTRACTED FROM: ".$title."\n";
+	    } else {
+		print "IGNORED (sentence exception): ".$title."\n";
+	    }
 	}
     }
 }
 
 #close($fh);
 close($ofh);
+close(SENT_TO_IGNORE);
