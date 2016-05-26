@@ -68,7 +68,7 @@ while (my $line = <$fh>) {
 		my $percent = $1;
 		if ($percent>100) {
 #		    $inregla=0;
-                    #$discard=1;
+                    $discard=1;
 		}
 	    }
 	} else {
@@ -101,9 +101,9 @@ while (my $line = <$fh>) {
 
 	if ($linecount == 3) {
 	    $context=$line;
-            #if ($discard) {
-	    #	print "$context\n";
-	    #   }
+            if ($discard) {
+	    	print "$context\n";
+	    }
 	}
 	if ($linecount == 4) {
 	    $passatoriginal=0;
@@ -190,12 +190,13 @@ sub Eixida {
 	    my $frasecorregida = "$abans$suggestion$despres";
 
 
-	    #my $motprevi=$abans;
-	    #$motprevi =~ s/^.*\b([^\b].+)$/$1/;
+	    my $motprevi=$abans;
+	    $motprevi =~ s/^.*\b([^\b].+)$/$1/;
 	    #$clauordenacio{$n}="$motprevi$suggestion$despres";
-
+	    $clauordenacio{$n}="$despres";
+	    print "$clauordenacio{$n}\n";
 	    #$clauordenacio{$n}="$suggestion$despres";
-	    $clauordenacio{$n}="$discard $ruleID $suggestion$despres";
+	    #$clauordenacio{$n}="$discard $ruleID $suggestion$despres";
 	    push (@corregit, $frasecorregida);
             if ($discard) {
 		push (@accio, "d");
@@ -205,7 +206,7 @@ sub Eixida {
 	    }
 	    $substituit=1;
 	} 
-=pod
+#=pod
 	else {
 
 	    # Intenta fer la substitució de les apostrofacions
@@ -219,7 +220,7 @@ sub Eixida {
 		    my $abans="";
 		    my $entremig="";
 		    my $despres="";
-		if ($context =~ /^(.*)$orig1 *( |\[\[|''|'''|'' *\[\[|''' *\[\[|\[\[.+\||'' *\[\[.+\||''' *\[\[.+\|)[ ]*$orig2(.*)$/) {
+		if (defined $orig2 && $context =~ /^(.*)$orig1 *( |\[\[|''|'''|'' *\[\[|''' *\[\[|\[\[.+\||'' *\[\[.+\||''' *\[\[.+\|)[ ]*$orig2(.*)$/) {
 		    $abans=$1;
 		    $entremig=$2;
 		    $despres=$3;
@@ -289,7 +290,7 @@ sub Eixida {
 		}
 	    }
 	}
-=cut
+#=cut
 	if (!$substituit)  {
             $clauordenacio{$n}="$discard $ruleID   NoTrobat: $original";
 	    push (@corregit, $context);

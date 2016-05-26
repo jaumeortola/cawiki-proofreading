@@ -28,13 +28,13 @@ my $excepttitle = <$exceptionsfile>;
 close $exceptionsfile;
 
 
-my $outputfilename = "sentences_extracted.txt"; #"regla_".$search_term.".txt";
-open( my $ofh,  ">:encoding(UTF-8)", $outputfilename );
+my $outputfilename = "sentences_extracted.txt";
+open( my $ofh,  ">>:encoding(UTF-8)", $outputfilename );
 
 
 my @pages = $bot->search($search."~0", 0);
 
-print "**** CERCANT: ".$search_term." ****\n";
+print "**** SEARCHING: ".$search_term." ****\n";
 
 foreach (@pages) {
     chomp($_);
@@ -44,18 +44,18 @@ foreach (@pages) {
 	
 	my $text = $bot->get_text($title);
 	my $textoriginal = $text;
-	print "Llegint: ".$title."\n";
+	print "Reading: ".$title."\n";
 
         if ($title =~ /$excepttitle/) {
-	    print "IGNORAT: ".$title."\n";
+	    print "IGNORED: ".$title."\n";
 	    next;
 	}
 
 
-	if ($text =~ /[-\/]$search_term[-\/ ]/) {
-	    print "IGNORAT: ".$title."\n";
-	    next;
-	}
+	#if ($text =~ /[-\/]$search_term[-\/ ]/) {
+	#    print "IGNORAT: ".$title."\n";
+	#    next;
+	#}
 
 
 	#$text =~ s/\b$search_term\b/$replace_term/g; 
@@ -70,7 +70,7 @@ foreach (@pages) {
 
 	    print $ofh "$abans$search_term$despres<|>$title<|>$search_term<|>$replace_term\n";
 	    print $ofh "$abans$replace_term$despres<|>y\n\n";
-	    print "EXTRET: ".$title."\n";
+	    print "EXTRACTED FROM: ".$title."\n";
 	}
     }
 }

@@ -1,3 +1,142 @@
+reconeixé reconegué
+reconeixeren reconegueren
+Reconeixeren Reconegueren
+"\b([Rr]estri)(g[ie].+)\b" "\1n\2" "restrigir"
+"així con" "així com"
+tarificació tarifació
+Tarificació Tarifació
+Esglèsia Església
+esglèsia església
+"\b([Rr]ecom)e(n[aéàe].+)\b" "\1a\2" "recomenar"
+mol·lècula molècula
+mol·lècules molècules
+Mol·lècula Molècula
+Mol·lècules Molècules
+besnet besnét
+besneta besnéta
+besnets besnéts
+besnetes besnétes
+Besnet Besnét
+Besneta Besnéta
+Besnets Besnéts
+Besnetes Besnétes
+"Sub-campió" "Subcampió"
+"sub-campió" "subcampió"
+"sub-campionat" "subcampionat"
+"Compta amb ((uns )?[0-9\.,]+ (\[?\[?habitants\]?\]?|batejats|\[\[habitant\]\]s|\[\[habitant\|habitants\]\]))" "Té \1" "\"compta amb\" habitants"
+"Comptava amb ([0-9\.,]+ (habitants|batejats))" "Tenia \1" "\"comptava amb\" habitants"
+"comptava amb ((uns )?[0-9\.,]+ (\[?\[?habitants\]?\]?|batejats|\[\[habitant\]\]s|\[\[habitant\|habitants\]\]))" "tenia \1" "\"comptava amb\" habitants"
+"comptava amb ([0-9\.,]+ (\[?\[?habitants\]?\]?|batejats))" "tenia \1" "\"comptava amb\" habitants"
+"comptava amb ([0-9\.,]+ (habitants|batejats))" "tenia \1" "\"comptava amb\" batejats"
+"La '''Associació" "L{{'}}'''Associació" "\"la associació\""
+"la associació" "l'associació"
+"la Associació" "l'Associació"
+"La Associació" "L'Associació"
+"s'inicies" "s'iniciés"
+sustitució substitució
+sustitucions substitucions
+sustituït substituït
+sustituïda substituïda
+sustituïdes substituïdes
+sustituïts substituïts
+començen comencen
+Començen Comencen
+estatues estàtues
+Estatues Estàtues
+respón respon
+respòn respon
+arriven arriben
+Arriven Arriben
+compromissos compromisos
+anal·lisi anàlisi
+anàl·lisi anàlisi
+Anal·lisi Anàlisi
+Anàl·lisi Anàlisi
+"\b([Aa]nal)·l(itz.+)\b" "\1\2" "anal·litzar"
+"\b([Ee]l)·l(imin.+)\b" "\1\2" "el·liminar"
+cadascuns cadascun
+"des d'enrere" "des de darrere"
+Tennesse Tennessee
+Tenessee Tennessee
+Tenesse Tennessee
+"\b([Ii]nte)n(gr[ae].+)\b" "\1\2" "intengrar"
+"l'assembla" "l'assemblea"
+"l'Assembla" "l'Assemblea"
+"L'assembla" "L'assemblea"
+"L'Assembla" "L'Assemblea"
+"les assembles" "les assemblees"
+"Les assembles" "Les assemblees"
+"em aquest" "en aquest"
+"em aquesta" "en aquesta"
+"em aquests" "en aquests"
+"em aquestes" "en aquestes"
+"Em aquest" "En aquest"
+"Em aquesta" "En aquesta"
+"Em aquests" "En aquests"
+"Em aquestes" "En aquestes"
+"em el" "en el"
+"em els" "en els"
+"em la" "en la"
+"em les" "en les"
+"Em el" "En el"
+"Em els" "En els"
+"Em la" "En la"
+"Em les" "En les"
+"d'oxígen" "d'oxigen"
+"la aleshores" "l'aleshores"
+"la aliança" "l'aliança"
+"la alimentació" "l'alimentació"
+"la alineació" "l'alineació"
+"la ambaixada" "l'ambaixada"
+"la amplada" "l'amplada"
+"la amenaça" "l'amenaça"
+"la anomenada" "l'anomenada"
+"la anàlisi" "l'anàlisi"
+"la aparició" "l'aparició"
+"la aplicació" "l'aplicació"
+"la associació" "l'associació"
+"la atenció" "l'atenció"
+"la aviació" "l'aviació"
+"la edició" "l'edició"
+"la edificació" "l'edificació"
+"la educació" "l'educació"
+"la escola" "l'escola"
+"la estació" "l'estació"
+"la evolució" "l'evolució"
+"la excepció" "l'excepció"
+"la experiència" "l'experiència"
+"la explosió" "l'explosió"
+"la obligació" "l'obligació"
+"la ocasió" "l'ocasió"
+"la ocupació" "l'ocupació"
+"la onzena" "l'onzena"
+"la opció" "l'opció"
+"la operació "l'operació"
+"la opinió" "l'opinió"
+"la oposició" "l'oposició"
+"la àvia" "l'àvia"
+"càmera autonòmica" "cambra autonòmica"
+"Càmera autonòmica" "Cambra autonòmica"
+"càmera alta" "cambra alta"
+"càmera baixa" "cambra baixa"
+provè prové
+"les cambres de final" "els quarts de final"
+"cambres de final" "quarts de final"
+"seva seva" "seva"
+vafer "va fer"
+contarestar contrarestar
+"d'antel·lació" "d'antelació"
+perillosses perilloses
+perillossos perillosos
+"així como" "així com"
+"s'instala" "s'instal·la"
+ambdos ambdós
+Ambdos Ambdós
+"\b([Ss]ub)(titu[íïeic].+)\b" "\1s\2" "subtituir"
+Famíl·lia Família
+famíl·lia família
+distingueixen distingeixen
+distingueix distingeix
 surtís sortís
 surtissin sortissin
 pòl·len pol·len
@@ -231,16 +370,6 @@ concorrer concórrer
 "3\.ª edició" "3a edició"
 "4\.ª edició" "4a edició"
 "5\.ª edició" "5a edició"
-"= *([21][90][0-9]0)s *=" "= \1 =" "\"1920s\""
-"= *([21][90][0-9]0)s *=" "= \1 =" "\"1930s\""
-"= *([21][90][0-9]0)s *=" "= \1 =" "\"1940s\""
-"= *([21][90][0-9]0)s *=" "= \1 =" "\"1950s\""
-"= *([21][90][0-9]0)s *=" "= \1 =" "\"1960s\""
-"= *([21][90][0-9]0)s *=" "= \1 =" "\"1970s\""
-"= *([21][90][0-9]0)s *=" "= \1 =" "\"1980s\""
-"= *([21][90][0-9]0)s *=" "= \1 =" "\"1990s\""
-"= *([21][90][0-9]0)s *=" "= \1 =" "\"2000s\""
-"= *([21][90][0-9]0)s *=" "= \1 =" "\"2010s\""
 "fins a a " "fins a "
 "fins a al " "fins al "
 "citat al +(\[\[[0-9]+\]\])" "citat el \1" "\"citat al\""

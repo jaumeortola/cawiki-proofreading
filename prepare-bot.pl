@@ -22,6 +22,11 @@ if (!defined $regla) {
     $regla="extracted";
 }
 
+
+open(my $exceptionsfile,  "<:encoding(UTF-8)", "ca/excepttitle.cfg" );
+my $excepttitle = <$exceptionsfile>;
+close $exceptionsfile;
+
 my $inputfilename = "sentences_$regla.txt";
 my $outputfilename = "bot.txt"; #"bot_$regla.txt";
 
@@ -55,6 +60,10 @@ while (my $line = <$fh>) {
 	$correcte=$1;
 	$accio=$2;
 #	print "$correcte\n";
+        if ($title =~ /$excepttitle/) {
+	    print "IGNORED: ".$title."\n";
+	    next;
+	}
 	if ($accio =~/^y$/) {
 	    &Eixida();
 	}

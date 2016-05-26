@@ -801,7 +801,6 @@ descoverts descoberts
 describint descrivint
 descubreix descobreix
 descubreixen descobreixen
-descubrí descobrí
 descubriren descobriren
 "de sde" "des de"
 "des de el" "des del"
