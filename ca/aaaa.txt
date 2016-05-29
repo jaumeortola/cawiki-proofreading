@@ -1,3 +1,11 @@
+relitzar realitzar
+relitzaven realitzaven
+relitzava realitzava
+relitzà realitzà
+Relitzà Realitzà
+"d'autobus" "d'autobús"
+"l'autobus" "l'autobús"
+"L'autobus" "L'autobús"
 "de debó" "de debò"
 "estils mixte" "estils mixt"
 "lliures mixte" "lliures mixt"

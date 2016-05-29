@@ -23,6 +23,9 @@ if (!defined $regla) {
 }
 
 
+open(my $of_ignore,  ">>:encoding(UTF-8)", "ca/sentences-to-ignore" );
+
+
 open(my $exceptionsfile,  "<:encoding(UTF-8)", "ca/excepttitle.cfg" );
 my $excepttitle = <$exceptionsfile>;
 close $exceptionsfile;
@@ -56,7 +59,7 @@ while (my $line = <$fh>) {
 	$error=$3;
 	$suggestion=$4;
 #	print "$title\n";
-    } elsif ($line =~ /^(.+)<\|>([yn])$/) {
+    } elsif ($line =~ /^(.+)<\|>([ynd])$/) {
 	$correcte=$1;
 	$accio=$2;
 #	print "$correcte\n";
@@ -67,6 +70,10 @@ while (my $line = <$fh>) {
 	if ($accio =~/^y$/) {
 	    &Eixida();
 	}
+	if ($accio =~/^d$/) {
+	    print $of_ignore "$context\n";
+	}
+
     }
 
 }
@@ -104,6 +111,7 @@ sub Eixida {
 
 close ($fh);
 close ($ofh);
+close ($of_ignore);
 
 system("sort bot.txt -o bot.txt");
 system("wc -l bot.txt");
