@@ -1,3 +1,19 @@
+"embasament" "embassament"
+"l'embasament" "l'embassament"
+"L'embasament" "L'embassament"
+"la regó" "la regió"
+"al finals" "a finals"
+"Al finals" "A finals"
+"delsegle" "del segle"
+ofical oficial
+oficals oficials
+Ofical Oficial
+Gal·leria Galeria
+gal·leira galeria
+gal·leries galeries
+Gal·leries Galeries
+miríade miríada
+"immiscuir-se" "immiscir-se"
 relitzar realitzar
 relitzaven realitzaven
 relitzava realitzava

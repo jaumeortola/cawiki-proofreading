@@ -61,8 +61,9 @@ while(<$fh>) {
 #	if ($textoriginal =~ /(.{1,70})\b([qwertyuiopasdfghjlzxcvnbm][\w·']+àn)\b(.{1,70})/) {
 #        if ($textoriginal =~ /(.{0,70})\b(([LTMNSD]| [ltmnsd])[`´].*)\b(.{1,70})/){	
 #	if ($textoriginal =~ /(.{1,70})\b(\w+([^Ll\]]∙l|l·[^Ll\]])\w+)\b(.{1,70})/) {
+#        if ($textoriginal =~ /(.{1,70})(ﬄ.|ﬂ|ﬃ)(.{1,70})/) {
 
-        if ($textoriginal =~ /(.{1,70})(ﬁ|ﬄ.|ﬂ|ﬃ)(.{1,70})/) {
+        if ($textoriginal =~ /^([^,\n]+)(''', +\()(.{1,150})/) {
 	    my $abans = $1;
 	    my $despres = $3;
 	    $search_term=$2;
@@ -82,7 +83,7 @@ while(<$fh>) {
 	    }
 
 	    $replace_term=$search_term;
-            $replace_term = "fi";
+            $replace_term = "''' (";
 #	    $replace_term =~ s/\b([\w·']+)àn\b/$1an/;
 #	    $replace_term =~ s/([qwertyuiopasdfghjklñçzxcvbnmàáèéìíòóùúïü\)\]\d' "]) \. *([QWERTYUIOPASDFGHJKLÑÇZXCVBNMÀÁÈÉÌÍÒÓÙÚ][^QWERTYUIOPASDFGHJKLÑÇZXCVBNMÀÁÈÉÌÍÒÓÙÚ]|\n)/$1. $2/;
 #	    $replace_term =~ s/([ ,\.]\d+)((µm|nm|cm|km|kg|°C|°F|°K)[ ,\.;\)\&])/$1\&nbsp;$2/;
