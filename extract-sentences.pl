@@ -24,10 +24,12 @@ my $summary= "Corregit: ".$search_term;
 my $search = "\"".$search_term."\"";
 
 open(my $exceptionsfile,  "<:encoding(UTF-8)", "ca/excepttitle.cfg" );
-my $excepttitle = <$exceptionsfile>;
+my $excepttitle = join("",<$exceptionsfile>);
 close $exceptionsfile;
+$excepttitle =~ s/ *\n/|/g;
+$excepttitle =~ s/\|$//;
 
-
+print $excepttitle;
 open(my $sentencesexceptionsfile,  "<:encoding(UTF-8)", "ca/sentences-to-ignore" );
 my $sentencestoignore = join ("", <$sentencesexceptionsfile>);
 close $sentencesexceptionsfile;

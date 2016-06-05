@@ -24,9 +24,10 @@ my $summary= "Corregit: ".$search_term;
 my $search = $search_term;
 
 open(my $exceptionsfile,  "<:encoding(UTF-8)", "ca/excepttitle.cfg" );
-my $excepttitle = <$exceptionsfile>;
+my $excepttitle = join("",<$exceptionsfile>);
 close $exceptionsfile;
-
+$excepttitle =~ s/ *\n/|/g;
+$excepttitle =~ s/\|$//;
 
 my $outputfilename = "sentences_extracted.txt"; #"regla_".$search_term.".txt";
 open( my $ofh,  ">:encoding(UTF-8)", $outputfilename );

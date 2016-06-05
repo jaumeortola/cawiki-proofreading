@@ -41,8 +41,10 @@ my @suggeriments;
 my $n=-1;
 
 open(my $exceptionsfile,  "<:encoding(UTF-8)", "ca/excepttitle.cfg" );
-my $excepttitle = <$exceptionsfile>; 
+my $excepttitle = join("",<$exceptionsfile>);
 close $exceptionsfile;
+$excepttitle =~ s/ *\n/|/g;
+$excepttitle =~ s/\|$//;
 
 if (!defined $regla) {
     $regla="several";

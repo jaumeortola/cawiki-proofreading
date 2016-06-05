@@ -22,13 +22,13 @@ if (!defined $regla) {
     $regla="extracted";
 }
 
-
 open(my $of_ignore,  ">>:encoding(UTF-8)", "ca/sentences-to-ignore" );
 
-
 open(my $exceptionsfile,  "<:encoding(UTF-8)", "ca/excepttitle.cfg" );
-my $excepttitle = <$exceptionsfile>;
+my $excepttitle = join("",<$exceptionsfile>);
 close $exceptionsfile;
+$excepttitle =~ s/ *\n/|/g;
+$excepttitle =~ s/\|$//;
 
 my $inputfilename = "sentences_$regla.txt";
 my $outputfilename = "bot.txt"; #"bot_$regla.txt";

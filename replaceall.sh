@@ -1,6 +1,6 @@
 #!/bin/bash
 language_dir=ca
-excepttitle=`cat $language_dir/excepttitle.cfg`
+excepttitle=`cat $language_dir/excepttitle.cfg | tr '\n' '|' | sed -r 's/\|$//' `
 exceptinside=`cat $language_dir/exceptinside.cfg`
 #echo python core/pwb.py replace.py "\b$1\b" "$2" -search:"\"$1\"" -regex -exceptitle:"$excepttitle" -exceptinside:"$exceptinside" -always -summary:"Corregit: $1 > $2"
 #python core/pwb.py replace -page:Usuari:Langtoolbot/proves "\b$1\b" "$2" -regex -excepttitle:"$excepttitle" -exceptinside:"$exceptinside" -exceptinsidetag:hyperlink -always -summary:"Corregit: $1 > $2" -ns:0  -search:"\"$1\""  -page:"Usuari:Langtoolbot/proves"
