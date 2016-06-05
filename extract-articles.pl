@@ -26,7 +26,7 @@ while (my $line = <$fh>) {
 	$ns = $1;
     }
     if ($found == 0 && $ns == 0) { 
-	if ($line =~ /('''\b.*?\b''', \()/) {
+	if ($line =~ /(\w+\]\] és[ ,;\.])/) {
 	    my $word= $1;
 	    print $ofh "$word\n";
 	    print $ofh "ARTICLE: $title\n";
