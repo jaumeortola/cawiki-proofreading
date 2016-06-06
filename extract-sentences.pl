@@ -29,7 +29,6 @@ close $exceptionsfile;
 $excepttitle =~ s/ *\n/|/g;
 $excepttitle =~ s/\|$//;
 
-print $excepttitle;
 open(my $sentencesexceptionsfile,  "<:encoding(UTF-8)", "ca/sentences-to-ignore" );
 my $sentencestoignore = join ("", <$sentencesexceptionsfile>);
 close $sentencesexceptionsfile;

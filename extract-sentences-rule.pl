@@ -14,7 +14,23 @@ my $inputfilename = "dump-data/results.txt";
 
 open( my $fh,  "<:encoding(UTF-8)", $inputfilename );
 #open( my $ofh,  ">:encoding(UTF-8)", $outputfilename );
+
+open(my $listofrulesfile,  "<:encoding(UTF-8)", "rules-to-extract.txt" );
+my $listofrules = join("",<$listofrulesfile>);
+close $listofrulesfile;
+$listofrules =~ s/ *\n/|/g;
+$listofrules =~ s/\|$//;
+
 my $regla=$ARGV[0];
+my $outputfilename=$regla;
+my $searchRuleID ="$regla";
+if (not defined $regla) {
+    $regla = $listofrules;
+    $outputfilename="several";
+    $searchRuleID ="($listofrules)";
+}
+print "Extracting rule(s): $regla\n";
+
 my $inregla=0;
 my $title="";
 my $suggestion="";
@@ -46,19 +62,15 @@ close $exceptionsfile;
 $excepttitle =~ s/ *\n/|/g;
 $excepttitle =~ s/\|$//;
 
-if (!defined $regla) {
-    $regla="several";
-}
 
-open( my $ofh2,  ">:encoding(UTF-8)", "sentences_$regla.txt" );
+open( my $ofh2,  ">:encoding(UTF-8)", "sentences_$outputfilename.txt" );
 
 while (my $line = <$fh>) {
     chomp($line);
-    if ($line =~ /Rule ID: /) {
-	if ($line =~ /Rule ID: \Q$regla\E(\[\d+\])?$/) {
-#	if ($line =~ /Rule ID: $regla\[[1-6]\]$/) {
 
-#	if ($line =~ /Rule ID: (BOBO|TORNAR_A_REFER|BORDAR_BRODAR|I_HI|CONFUSIO_PARTICIPI_INFINITIU|PRONOMS_FEBLES_EL_LI|CONCORDANCA_GRIS|ELS_INFINITIU|ES_POT|LELO|EN_LLOC|A_LHORA_ALHORA|MINORISTA|MOL_MOLT|GLOSAR|GUIO_INCORRECTE|CIMENTS|BAIXAR_ABAIXAR|DECADES|BESTIA)(\[\d+\])?$/) {
+    if ($line =~ /Rule ID: /) {
+	if ($line =~ /Rule ID: $searchRuleID(\[\d+\])?$/) {
+#	if ($line =~ /Rule ID: $regla\[[1-6]\]$/) {
 
 	    #print $ofh2 "Title: $title\n";
 	    $inregla=1;
@@ -192,13 +204,13 @@ sub Eixida {
 	    my $frasecorregida = "$abans$suggestion$despres";
 
 
-	    my $motprevi=$abans;
-	    $motprevi =~ s/^.*\b([^\b].+)$/$1/;
+	    #my $motprevi=$abans;
+	    #$motprevi =~ s/^.*\b([^\b].+)$/$1/;
 	    #$clauordenacio{$n}="$motprevi$suggestion$despres";
-	    $clauordenacio{$n}="$despres";
-	    print "$clauordenacio{$n}\n";
+	    #$clauordenacio{$n}="$despres";
+	    #print "AAAA $clauordenacio{$n}\n";
 	    #$clauordenacio{$n}="$suggestion$despres";
-	    #$clauordenacio{$n}="$discard $ruleID $suggestion$despres";
+	    $clauordenacio{$n}="$discard $ruleID $suggestion$despres";
 	    push (@corregit, $frasecorregida);
             if ($discard) {
 		push (@accio, "d");
