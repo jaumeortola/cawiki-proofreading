@@ -21,8 +21,11 @@ my $regla=$ARGV[0];
 if (!defined $regla) {
     $regla="extracted";
 }
-
-open(my $of_ignore,  ">>:encoding(UTF-8)", "ca/sentences-to-ignore" );
+my $ofnDiscarded="ca/whitelist-extracted-sentences";
+if ($regla !~ /^extracted$/) {
+    $ofnDiscarded="ca/whitelist-rules";
+}
+open(my $of_ignore,  ">>:encoding(UTF-8)", $ofnDiscarded);
 
 open(my $exceptionsfile,  "<:encoding(UTF-8)", "ca/excepttitle.cfg" );
 my $excepttitle = join("",<$exceptionsfile>);

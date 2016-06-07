@@ -1,3 +1,14 @@
+reponsable responsable
+reponsables responsables
+intervàlic intervàl·lic
+intervàlics intervàl·lics
+intervàlica intervàl·lica
+intervàliques intervàl·liques
+"Sant Petesburg" "Sant Petersburg"
+"requeriment tècnic" "requisit tècnic"
+"requeriments tècnics" "requisits tècnics"
+"Requeriment tècnic" "Requisit tècnic"
+"Requeriments tècnics" "Requisits tècnics"
 amercià americà
 amercians americans
 amerciana americana

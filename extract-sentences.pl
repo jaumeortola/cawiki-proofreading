@@ -29,12 +29,9 @@ close $exceptionsfile;
 $excepttitle =~ s/ *\n/|/g;
 $excepttitle =~ s/\|$//;
 
-open(my $sentencesexceptionsfile,  "<:encoding(UTF-8)", "ca/sentences-to-ignore" );
+open(my $sentencesexceptionsfile,  "<:encoding(UTF-8)", "ca/whitelist-extracted-sentences" );
 my $sentencestoignore = join ("", <$sentencesexceptionsfile>);
 close $sentencesexceptionsfile;
-
-
-open(SENT_TO_IGNORE,"ca/sentences-to-ignore");
 
 
 my $outputfilename = "sentences_extracted.txt";
@@ -90,4 +87,4 @@ foreach (@pages) {
 
 #close($fh);
 close($ofh);
-close(SENT_TO_IGNORE);
+
