@@ -63,7 +63,7 @@ while(<$fh>) {
 #	if ($textoriginal =~ /(.{1,70})\b(\w+([^Ll\]]∙l|l·[^Ll\]])\w+)\b(.{1,70})/) {
 #        if ($textoriginal =~ /(.{1,70})(ﬄ.|ﬂ|ﬃ)(.{1,70})/) {
 #        if ($textoriginal =~ /^([^,\n]+)(''', +\()(.{1,150})/) {
-        if ($textoriginal =~ /(.{1,70})(\]\] s[ ,;\.])(.{1,70})/) {
+        if ($textoriginal =~ /(.{1,70})\b([Rr]especte)\b( [^ad].{1,70})/) {
 	    my $abans = $1;
 	    my $despres = $3;
 	    $search_term=$2;
@@ -83,7 +83,7 @@ while(<$fh>) {
 	    }
 
 	    $replace_term=$search_term;
-            $replace_term =~ s/ s/s/;
+            $replace_term = "respecte a";
 #            $replace_term = "''' (";
 #	    $replace_term =~ s/\b([\w·']+)àn\b/$1an/;
 #	    $replace_term =~ s/([qwertyuiopasdfghjklñçzxcvbnmàáèéìíòóùúïü\)\]\d' "]) \. *([QWERTYUIOPASDFGHJKLÑÇZXCVBNMÀÁÈÉÌÍÒÓÙÚ][^QWERTYUIOPASDFGHJKLÑÇZXCVBNMÀÁÈÉÌÍÒÓÙÚ]|\n)/$1. $2/;
