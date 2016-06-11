@@ -1761,11 +1761,6 @@ liliputiencs lil·liputiencs
 "l'inauguració" "la inauguració"
 "L'inauguració" "La inauguració"
 "l'incremnt" "l'increment"
-"l'industria" "la indústria"
-"l'Industria" "la Indústria"
-"L'industria" "La indústria"
-"l'indústria" "la indústria"
-"L'indústria" "La indústria"
 linguística lingüística
 linguístic lingüístic
 linguístics lingüístics
