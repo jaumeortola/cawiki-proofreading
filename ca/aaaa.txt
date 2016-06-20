@@ -1,3 +1,11 @@
+"per a conseguir" "per a aconseguir"
+inciativa iniciativa
+inciatives iniciatives
+carerra carrera
+Carerra Carrera
+carerres carreres
+Carerres Carreres
+"([0-9\.,]+) Km\b" "\1 km" "\"Km\""
 Llengüa Llengua
 llengüa llengua
 "s'inica" "s'inicia"
