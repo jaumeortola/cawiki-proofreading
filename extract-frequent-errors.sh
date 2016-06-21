@@ -1,7 +1,7 @@
 #!/bin/bash
-language_dir=ca
+LANGUAGE=`cat language-code.cfg`
 rm sentences_extracted.txt
-file="./ca/frequent-errors"
+file="./${LANGUAGE}/frequent-errors"
 echo "*** Processing file: $file ***"
 while read -r i; do
     eval ./extract-sentences.pl $i
