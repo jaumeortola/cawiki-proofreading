@@ -6,8 +6,15 @@ use utf8;
 
 binmode( STDOUT, ":utf8" );
 
-my $infilename   = "dump-data/results.txt";
-my $outfilename  = "dump-data/results-summary.txt";
+
+open(my $languageCodeFile,  "<:encoding(UTF-8)", "language-code.cfg" );
+my $languageCode = <$languageCodeFile>;
+close $languageCodeFile;
+
+
+
+my $infilename   = "$languageCode-dump-data/results.txt";
+my $outfilename  = "$languageCode-dump-data/results-summary.txt";
 
 open( my $fh,  "<:encoding(UTF-8)", $infilename );
 
