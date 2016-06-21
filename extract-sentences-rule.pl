@@ -9,7 +9,12 @@ setlocale(LC_ALL, "C");
 
 binmode( STDOUT, ":utf8" );
 
-my $inputfilename = "dump-data/results.txt";
+open(my $languageCodeFile,  "<:encoding(UTF-8)", "language-code.cfg" );
+my $languageCode = <$languageCodeFile>;
+close $languageCodeFile;
+
+
+my $inputfilename = "$languageCode-dump-data/results.txt";
 #my $outputfilename = "bot.txt";
 
 open( my $fh,  "<:encoding(UTF-8)", $inputfilename );
@@ -56,7 +61,7 @@ my @suggeriments;
 
 my $n=-1;
 
-open(my $exceptionsfile,  "<:encoding(UTF-8)", "ca/excepttitle.cfg" );
+open(my $exceptionsfile,  "<:encoding(UTF-8)", "$languageCode/excepttitle.cfg" );
 my $excepttitle = join("",<$exceptionsfile>);
 close $exceptionsfile;
 $excepttitle =~ s/ *\n/|/g;

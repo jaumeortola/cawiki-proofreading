@@ -17,17 +17,22 @@ use String::Diff qw( diff_fully diff diff_merge diff_regexp );# export functions
 
 binmode( STDOUT, ":utf8" );
 
+open(my $languageCodeFile,  "<:encoding(UTF-8)", "language-code.cfg" );
+my $languageCode = <$languageCodeFile>;
+close $languageCodeFile;
+
+
 my $regla=$ARGV[0];
 if (!defined $regla) {
     $regla="extracted";
 }
-my $ofnDiscarded="ca/whitelist-extracted-sentences";
+my $ofnDiscarded="$languageCode/whitelist-extracted-sentences";
 if ($regla !~ /^extracted$/) {
-    $ofnDiscarded="ca/whitelist-rules";
+    $ofnDiscarded="$languageCode/whitelist-rules";
 }
 open(my $of_ignore,  ">>:encoding(UTF-8)", $ofnDiscarded);
 
-open(my $exceptionsfile,  "<:encoding(UTF-8)", "ca/excepttitle.cfg" );
+open(my $exceptionsfile,  "<:encoding(UTF-8)", "$languageCode/excepttitle.cfg" );
 my $excepttitle = join("",<$exceptionsfile>);
 close $exceptionsfile;
 $excepttitle =~ s/ *\n/|/g;

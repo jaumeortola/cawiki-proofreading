@@ -1,6 +1,6 @@
 #!/bin/bash
-language_dir=ca
-for file in $language_dir/*.txt
+LANGUAGE=`cat language-code.cfg`
+for file in ${LANGUAGE}/*.txt
 do
     echo "*** Processing file: $file ***"
     while read -r i; do

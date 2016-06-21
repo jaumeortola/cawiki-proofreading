@@ -1,8 +1,15 @@
 #!/usr/bin/perl
 use MediaWiki::Bot;
+
+open(my $languageCodeFile,  "<:encoding(UTF-8)", "language-code.cfg" );
+my $languageCode = <$languageCodeFile>;
+close $languageCodeFile;
+
+my $wiki = "$languageCode.wikipedia.org";
+
 my $bot = MediaWiki::Bot->new({
     assert      => 'bot',
-    host        => 'ca.wikipedia.org',
+    host        => $wiki,
 });
 
 use strict;
@@ -23,13 +30,13 @@ my $replace_term = $ARGV[1];
 my $summary= "Corregit: ".$search_term;
 my $search = "\"".$search_term."\"";
 
-open(my $exceptionsfile,  "<:encoding(UTF-8)", "ca/excepttitle.cfg" );
+open(my $exceptionsfile,  "<:encoding(UTF-8)", "$languageCode/excepttitle.cfg" );
 my $excepttitle = join("",<$exceptionsfile>);
 close $exceptionsfile;
 $excepttitle =~ s/ *\n/|/g;
 $excepttitle =~ s/\|$//;
 
-open(my $sentencesexceptionsfile,  "<:encoding(UTF-8)", "ca/whitelist-extracted-sentences" );
+open(my $sentencesexceptionsfile,  "<:encoding(UTF-8)", "$languageCode/whitelist-extracted-sentences" );
 my $sentencestoignore = join ("", <$sentencesexceptionsfile>);
 close $sentencesexceptionsfile;
 
@@ -52,7 +59,7 @@ foreach (@pages) {
 	my $textoriginal = $text;
 	print "Reading: ".$title."\n";
 
-        if ($title =~ /$excepttitle/) {
+        if ($excepttitle =~ /../ && $title =~ /$excepttitle/) {
 	    print "IGNORED: ".$title."\n";
 	    next;
 	}
