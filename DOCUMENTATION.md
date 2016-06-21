@@ -30,10 +30,14 @@ nça va continuar fins el 1659, data en què es va signar la <|>Història de Bar
 nça va continuar fins al 1659, data en què es va signar la <|>y
 ```
 
-The second line (the corrected sentence) can be edited as desired. The letter at the end of the second line (y/n/d) means: 1. (y)es: the change is to be applied.
-2. (n)o: do not apply the change
-3. (d)iscard: do not apply the change and do not show ever again this sentence. The sentece will be stored in the file `whitelist-extracted-sentences`.
+The second line (the corrected sentence) can be edited as desired. The letter at the end of the second line (y/n/d) means:
 
+1. (y)es: the change is to be applied.
+2. (n)o: do not apply the change.
+3. (d)iscard: do not apply the change and do not extract ever again this sentence. The sentece will be stored in the file `whitelist-extracted-sentences`.
+
+* Execute `./prepare-bot.pl`, which generates a file `bot.txt` and adds sentences to `whitelist-extracted-sentences`.
+* Execute `./do-my-replacements.sh`, which does the actual edits in the Wikipedia articles.
 
 ## Frequent errors that need supervision
 
