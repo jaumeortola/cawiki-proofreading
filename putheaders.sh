@@ -1,5 +1,6 @@
 #!/bin/bash
-files="./dump-data/chunks/*.xml"
+LANGUAGE=`cat language-code.cfg`
+files="./${LANGUAGE}-dump-data/chunks/*.xml"
 for f in $files
 do
     cat ./wikihead.xml $f wikitail.xml > "$f.xml"
