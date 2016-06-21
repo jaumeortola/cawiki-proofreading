@@ -34,9 +34,6 @@ amerciana americana
 amercianes americanes
 poblema problema
 poblemes problemes
-"embasament" "embassament"
-"l'embasament" "l'embassament"
-"L'embasament" "L'embassament"
 "la regó" "la regió"
 "al finals" "a finals"
 "Al finals" "A finals"
