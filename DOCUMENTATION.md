@@ -4,6 +4,7 @@ This project includes several tools that can be used separately.
 * There are some scripts in Perl that use the [MediaWiki::Bot](http://search.cpan.org/~lifeguard/MediaWiki-Bot-5.006002/lib/MediaWiki/Bot.pm) framework.
 * Scripts in bash. 
 * The linguistic anaylsis is made with [LanguageTool](https://languagetool.org/) which requires Java 8.
+* In the file `language-code.cfg` write the two-letter code for the language you want to work in (i.e. `ca` for Catalan, `fr` for French). Language-dependent data will be stored in a folder named with this code.
 
 <!--## Simple replacements-->
 
