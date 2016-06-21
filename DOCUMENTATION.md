@@ -36,10 +36,16 @@ The second line (the corrected sentence) can be edited as desired. The letter at
 2. (n)o: do not apply the change.
 3. (d)iscard: do not apply the change and do not extract ever again this sentence. The sentece will be stored in the file `whitelist-extracted-sentences`.
 
-* Execute `./prepare-bot.pl`, which generates a file `bot.txt` and adds sentences to `whitelist-extracted-sentences`.
-* Execute `./do-my-replacements.sh`, which does the actual edits in the Wikipedia articles.
+* Run `./prepare-bot.pl`, which generates a file `bot.txt` and adds sentences to `whitelist-extracted-sentences`.
+* Run `./do-my-replacements.sh`, which does the actual edits in the Wikipedia articles.
 
 ## Frequent errors that need supervision
+
+The sambe process described in the previous section, can be used with a list of usual errors. 
+* Write the errors in `frequent-errors`, one per line. 
+* Run `./extract-frequent-errors.sh`.
+* Edit `sentences_extracted.txt`.
+* Run `./prepare-bot.pl` and `./do-my-replacements.sh`.
 
 ## Fixing errors with LanguageTool
 
