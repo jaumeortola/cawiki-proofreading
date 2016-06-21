@@ -61,7 +61,7 @@ The same process described in the previous section, can be used with a list of u
 ### Extract sentences by rule, supervise and apply changes 
 
 This process is similar to that described above. But now we are going to extract the errors from the results of the LT analysis. 
-* Extract the errors with ID="SON": `./extract-sentences-rule.pl SON`.
+* Extract the errors by rule. For example, for errors with id="SON": `./extract-sentences-rule.pl SON`.
 * Edit `sentences_SON.txt`.
 * Run `./prepare-bot.pl SON`.
 * Apply the changes with `./do-my-replacements.sh`.
