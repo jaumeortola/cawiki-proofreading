@@ -58,7 +58,11 @@ The same process described in the previous section, can be used with a list of u
 * Join the results in a single file. Execute: `./join-results.sh`.
 * Get a results summary with `./get-results-summary.pl`.
 
-### Extracting errors by rule type
+### Extract sentences by rule, supervise and apply changes 
 
-### Supervising errors
-### Appliying the corrections
+This process is similar to that described above. But now we are going to extract the errors from the results of the LT analysis. 
+* Extract the errors with ID="SON": `./extract-sentences-rule.pl SON`.
+* Edit `sentences_SON.txt`.
+* Run `./prepare-bot.pl SON`.
+* Apply the changes with `./do-my-replacements.sh`.
+ 
