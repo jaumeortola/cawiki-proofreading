@@ -42,15 +42,17 @@ The second line (the corrected sentence) can be edited as desired. The letter at
 
 ## Frequent errors that need supervision
 
-The sambe process described in the previous section, can be used with a list of usual errors. 
+The same process described in the previous section, can be used with a list of usual errors. 
 * Write the errors in `frequent-errors`, one per line. 
 * Run `./extract-frequent-errors.sh`.
 * Edit `sentences_extracted.txt`.
 * Run `./prepare-bot.pl` and `./do-my-replacements.sh`.
 
-## Fixing errors with LanguageTool
+## Using LanguageTool
 
-### Analysis of the Wikimedia dump with LanguageTool
+### Analysis of the Wikipedia dump with LanguageTool (LT)
+* Download and decompress the latest Wikipedia dump with `./download-latest-dump.sh`.
+* Currently LT is not fully optimized for multithreading. As a rule of thumb, we split the dump file in the number of available CPUs, using `split.py`. 
 ### Extracting and sorting errors
 ### Supervising errors
 ### Appliying the corrections
