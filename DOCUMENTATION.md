@@ -53,6 +53,11 @@ The same process described in the previous section, can be used with a list of u
 ### Analysis of the Wikipedia dump with LanguageTool (LT)
 * Download and decompress the latest Wikipedia dump with `./download-latest-dump.sh`.
 * Currently LT is not fully optimized for multithreading. As a rule of thumb, we split the dump file in the number of available CPUs, using `split.py`. 
+* Add headers to the chunks with `./putheaders.sh`.
+* Analyze the chunks with LT. Execute: `./chunks-analyze.sh`.
+* Join the results in a single file. Execute: `./join-results.sh`.
+* Get a results summary with `./get-results-summary.pl`.
+
 ### Extracting and sorting errors
 ### Supervising errors
 ### Appliying the corrections
