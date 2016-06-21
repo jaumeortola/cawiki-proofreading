@@ -54,10 +54,11 @@ The same process described in the previous section, can be used with a list of u
 * Download and decompress the latest Wikipedia dump with `./download-latest-dump.sh`.
 * Currently LT is not fully optimized for multithreading. As a rule of thumb, we split the dump file in the number of available CPUs, using `split.py`. 
 * Add headers to the chunks with `./putheaders.sh`.
-* Analyze the chunks with LT. Execute: `./chunks-analyze.sh`.
+* Analyze the chunks with LT. Execute: `./chunks-analyze.sh`. This process can take hours or days depending on the size of the Wikipedia and the computing power available.
 * Join the results in a single file. Execute: `./join-results.sh`.
 * Get a results summary with `./get-results-summary.pl`.
 
-### Extracting and sorting errors
+### Extracting errors by rule type
+
 ### Supervising errors
 ### Appliying the corrections
