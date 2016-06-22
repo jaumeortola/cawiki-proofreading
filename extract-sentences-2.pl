@@ -20,7 +20,6 @@ binmode( STDOUT, ":utf8");
 
 my $search_term = "otorgar"; #$ARGV[0];
 my $replace_term = "";  #$ARGV[1];
-my $summary= "Corregit: ".$search_term;
 my $search = $search_term;
 
 open(my $exceptionsfile,  "<:encoding(UTF-8)", "ca/excepttitle.cfg" );

@@ -83,7 +83,7 @@ def main(*args):
             text = originaltext.replace("\n" + tochange + wordafter, "\n" + correction + wordafter)
         if text != originaltext:
            page.text = text
-           summary = u"Corregit: - " + wordbefore + tochange + wordafter + " + " + wordbefore + correction + wordafter
+           summary = u"bot: - " + wordbefore + tochange + wordafter + " + " + wordbefore + correction + wordafter
            page.save(summary)
         else:
            print "No change in page: " + title.encode('utf-8') + " | " + line.encode('utf-8')

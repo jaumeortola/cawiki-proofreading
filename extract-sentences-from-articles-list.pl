@@ -21,7 +21,6 @@ binmode( STDOUT, ":utf8" );
 
 my $search_term = "europa";  #$ARGV[0];
 my $replace_term = "Europa";    #$ARGV[1];
-my $summary= "Corregit: ".$search_term;
 my $search = "\"".$search_term."\"";
 
 my $outputfilename = "sentences_extracted.txt";
@@ -31,8 +30,6 @@ my $inputfilename = "list.txt";
 open( my $fh,  "<:encoding(UTF-8)", $inputfilename );
 open( my $ofh,  ">:encoding(UTF-8)", $outputfilename );
 
-
-#my $summary = "Normalitza ela geminada";
 
 while(<$fh>) {
     chomp($_);
