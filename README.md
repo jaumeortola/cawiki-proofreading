@@ -1,6 +1,8 @@
 # cawiki-proofreading
 
-This projecte contains several tools aimed at proofreading the whole Catalan wikipedia. The ideas and scripts used for Catalana can be easily adapted for other languages.
+This projecte contains several tools aimed at proofreading the whole Catalan wikipedia. 
+
+This scripts can be used easily in other languages. 
 
 See [DOCUMENTATION](DOCUMENTATION.md).
 
