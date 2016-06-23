@@ -1,16 +1,16 @@
 ## Requirements & setup
 This project includes several tools that can be used separately.
-* The scripts are written mostly in Python using [Pywikibot](https://www.mediawiki.org/wiki/Manual:Pywikibot). Scripts in the folder /pywikibot-scripts should be copied in the approriate pywikibot-core/scripts folder.
+* The scripts are written mostly in Python using [Pywikibot](https://www.mediawiki.org/wiki/Manual:Pywikibot). Scripts in the folder /pywikibot-scripts should be copied in the appropriate pywikibot-core/scripts folder.
 * There are some scripts in Perl that use the [MediaWiki::Bot](http://search.cpan.org/~lifeguard/MediaWiki-Bot-5.006002/lib/MediaWiki/Bot.pm) framework.
 * Scripts in bash. 
-* The linguistic anaylsis is made with [LanguageTool](https://languagetool.org/) which requires Java 8. (At the moment, usign a [fork](https://github.com/jaumeortola/languagetool/tree/wiki-proofreading-2) of LanguageTool).
+* The linguistic analysis is made with [LanguageTool](https://languagetool.org/) which requires Java 8. (At the moment, using a [fork](https://github.com/jaumeortola/languagetool/tree/wiki-proofreading-2) of LanguageTool).
 * In the file `language-code.cfg` write the two-letter code for the language you want to work in (i.e. `ca` for Catalan, `fr` for French). Language-dependent data will be stored in a folder named with this code.
 
 <!--## Simple replacements-->
 
 ## Errors that can be corrected always automatically 
 `list-replaceall.sh` makes all the replacements. **Important**: You must be absolutely sure that it is always fine to apply the correction. This implies that you don't change words in other languages (in Catalan, we have to take care specially of words in Spanish, Portuguese, French and Italian) or in non-standard language (old or dialectal).
-* Lists of replacements are inside a folder (/ca for Catalan) in .txt files. Every line is a substitution and every line can contain two or three parameters. With two arguments (i.e. `"requeriment tècnic" "requisit tècnic"`) every ocurrence of the first argument will be replaced by the second in every article in the Wikipedia. Word boundaries (\b) are assumed. With 3 arguments (i.e. `"\b([Aa]nal)·l(itz.+)\b" "\1\2" "anal·litzar"`) every ocurrence of the first argument (as a regular expression) is replaced by de second argument. The third argument is the string to be searched. Word boundaries are not assumed.
+* Lists of replacements are inside a folder (/ca for Catalan) in .txt files. Every line is a substitution and every line can contain two or three parameters. With two arguments (i.e. `"requeriment tècnic" "requisit tècnic"`) every occurrence of the first argument will be replaced by the second in every article in the Wikipedia. Word boundaries (\b) are assumed. With 3 arguments (i.e. `"\b([Aa]nal)·l(itz.+)\b" "\1\2" "anal·litzar"`) every occurrence of the first argument (as a regular expression) is replaced by de second argument. The third argument is the string to be searched. Word boundaries are not assumed.
 * The file excepttitle.cfg contains titles of articles to be ignored always. The file exceptinside.cfg contains names of templates or tags where the replacements should not be done. 
 
 ## Extract sentences, supervise and apply changes
@@ -35,7 +35,7 @@ The second line (the corrected sentence) can be edited as desired. The letter at
 
 1. (y)es: the change is to be applied.
 2. (n)o: do not apply the change.
-3. (d)iscard: do not apply the change and do not extract ever again this sentence. The sentece will be stored in the file `whitelist-extracted-sentences`.
+3. (d)iscard: do not apply the change and do not extract ever again this sentence. The sentence will be stored in the file `whitelist-extracted-sentences`.
 
 * Run `./prepare-bot.pl`, which generates a file `bot.txt` and adds sentences to `whitelist-extracted-sentences`.
 * Run `./do-my-replacements.sh`, which does the actual edits in the Wikipedia articles.
