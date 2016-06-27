@@ -1,3 +1,7 @@
+"ha echo" "ha hecho"
+"han echo" "han hecho"
+desidad densidad
+supercie superficie
 "esta situado" "está situado"
 "esta situada" "está situada"
 "Esta situado" "Está situado"
