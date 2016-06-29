@@ -1,11 +1,12 @@
 import os
 import bz2
 
-def split_xml(filename, pages_per_chunk, destination_folder):
+def split_xml(filename, maxlines_per_chunk, folder):
     ''' The function gets the filename of wiktionary.xml file as input and creates
     smallers chunks of it in a the diretory chunks
     '''
     # Check and create chunk diretory
+    destination_folder = os.path.join (folder, "chunks")
     if not os.path.exists(destination_folder):
         os.mkdir(destination_folder)
     # Counters
@@ -15,7 +16,7 @@ def split_xml(filename, pages_per_chunk, destination_folder):
     chunkname = lambda filecount: os.path.join(destination_folder,filename.replace(".xml","")+str(filecount)+".xml")
     chunkfile = open(chunkname(filecount), 'w')
     # Read line by line
-    xmlfile = open(filename)
+    xmlfile = open(os.path.join(folder,filename))
     inpage = False
     linecount = 0
     pageline = ""
@@ -23,10 +24,13 @@ def split_xml(filename, pages_per_chunk, destination_folder):
     nsline = ""
     redirectline = ""
     idline = ""
-
+    linesinchunk = 0
+    linescopied = 0
     for line in xmlfile:
         if inpage:
             chunkfile.write(line)
+            linesinchunk += 1
+            linescopied += 1
         # the </page> determines new wiki page
         if '</page>' in line:
             if inpage:
@@ -38,6 +42,13 @@ def split_xml(filename, pages_per_chunk, destination_folder):
             redirectline = ""
             linecount = 0
             idline = ""
+            if linesinchunk > maxlines_per_chunk:
+                #print chunkname() # For Debugging
+                chunkfile.close()
+                linesinchunk = 0
+                pagecount = 0 # RESET pagecount
+                filecount += 1 # increment filename           
+                chunkfile = open(chunkname(filecount), 'w')
         if '<page>' in line:
             pageline = line
             linecount = 1
@@ -55,14 +66,18 @@ def split_xml(filename, pages_per_chunk, destination_folder):
             chunkfile.write(nsline)
             chunkfile.write(idline)
             chunkfile.write(line)
+            linesinchunk += 5
+            linescopied += 5
             inpage = True
-        if pagecount > pages_per_chunk:
-            #print chunkname() # For Debugging
-            chunkfile.close()
-            pagecount = 0 # RESET pagecount
-            filecount += 1 # increment filename           
-            chunkfile = open(chunkname(filecount), 'w')
+#        if pagecount > maxlines_per_chunk:
+#            #print chunkname() # For Debugging
+#            chunkfile.close()
+#            linesinchunk = 0
+#            pagecount = 0 # RESET pagecount
+#            filecount += 1 # increment filename           
+#            chunkfile = open(chunkname(filecount), 'w')
         linecount += 1
+    print("Total lines copied:", linescopied)
     try:
         chunkfile.close()
     except:
@@ -70,4 +85,4 @@ def split_xml(filename, pages_per_chunk, destination_folder):
 
 if __name__ == '__main__':
     # When the script is self run
-    split_xml('eswiki-latest-pages-articles.xml', 78812, "es-dump-data/chunks")
+    split_xml('frwiki-latest-pages-articles.xml', 11700000, "fr-dump-data")
