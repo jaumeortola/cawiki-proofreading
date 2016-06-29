@@ -488,8 +488,8 @@ teletransportació teleportació
 "amb els propis autors" "amb els mateix autors"
 "sí mateixa" "si mateixa"
 "sí mateix" "si mateix"
-"sí mateixos"si mateixos
-"sí mateixes"si mateixes
+"sí mateixos" "si mateixos"
+"sí mateixes" "si mateixes"
 Transilvània Transsilvània
 Composa Compon
 elments elements

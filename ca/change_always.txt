@@ -1,4 +1,4 @@
-"l'individuu" l'individu"
+"l'individuu" "l'individu"
 2on 2n
 3er 3r
 4art 4t
