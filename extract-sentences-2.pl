@@ -9,9 +9,11 @@ use strict;
 use warnings;
 use autodie;
 use utf8;
-
 use Encode::Locale;
 use Encode;
+use Env qw(LANGUAGE_CODE);
+
+my $languageCode = $LANGUAGE_CODE;
 
 @ARGV = map { decode(locale => $_, 1) } @ARGV;
 
@@ -22,7 +24,7 @@ my $search_term = "otorgar"; #$ARGV[0];
 my $replace_term = "";  #$ARGV[1];
 my $search = $search_term;
 
-open(my $exceptionsfile,  "<:encoding(UTF-8)", "ca/excepttitle.cfg" );
+open(my $exceptionsfile,  "<:encoding(UTF-8)", "$languageCode/excepttitle.cfg" );
 my $excepttitle = join("",<$exceptionsfile>);
 close $exceptionsfile;
 $excepttitle =~ s/ *\n/|/g;

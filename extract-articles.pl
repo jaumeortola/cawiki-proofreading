@@ -3,10 +3,14 @@ use strict;
 use warnings;
 #use autodie;
 use utf8;
+use Env qw(LANGUAGE_CODE);
+
+my $languageCode = $LANGUAGE_CODE;
+
 
 binmode( STDOUT, ":utf8" );
 
-my $inputfilename = "dump-data/cawiki-latest-pages-articles.xml";
+my $inputfilename = "$languageCode-dump-data/cawiki-latest-pages-articles.xml";
 my $outputfilename = "list.txt";
 
 open( my $fh,  "<:encoding(UTF-8)", $inputfilename );

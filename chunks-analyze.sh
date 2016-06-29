@@ -1,5 +1,5 @@
 #!/bin/bash
-LANGUAGE=`cat language-code.cfg`
+LANGUAGE=$LANGUAGE_CODE
 ltwiki_java_dir=~/lt-wiki
 dumpdir=./${LANGUAGE}-dump-data/chunks/
 for file in "$dumpdir"${LANGUAGE}wiki-*.xml

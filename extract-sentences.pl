@@ -1,9 +1,8 @@
 #!/usr/bin/perl
 use MediaWiki::Bot;
+use Env qw(LANGUAGE_CODE);
 
-open(my $languageCodeFile,  "<:encoding(UTF-8)", "language-code.cfg" );
-my $languageCode = <$languageCodeFile>;
-close $languageCodeFile;
+my $languageCode = $LANGUAGE_CODE;
 
 my $wiki = "$languageCode.wikipedia.org";
 

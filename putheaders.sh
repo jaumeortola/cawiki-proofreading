@@ -1,5 +1,5 @@
 #!/bin/bash
-LANGUAGE=`cat language-code.cfg`
+LANGUAGE=$LANGUAGE_CODE
 files="./${LANGUAGE}-dump-data/chunks/*.xml"
 for f in $files
 do

@@ -1,5 +1,5 @@
 #!/bin/bash
-LANGUAGE=`cat language-code.cfg`
+LANGUAGE=$LANGUAGE_CODE
 for file in ${LANGUAGE}/*.txt
 do
     echo "*** Processing file: $file ***"

@@ -1,9 +1,11 @@
 #!/usr/bin/perl
 #require "BotLib2.pm";
+use Env qw(LANGUAGE_CODE);
+my $languageCode = $LANGUAGE_CODE;
 use MediaWiki::Bot;
 my $bot = MediaWiki::Bot->new({
     assert      => 'bot',
-    host        => 'ca.wikipedia.org',
+    host        => '$languageCode.wikipedia.org',
 });
 
 use strict;

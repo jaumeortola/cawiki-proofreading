@@ -1,4 +1,4 @@
 #!/bin/bash
-LANGUAGE=`cat language-code.cfg`
+LANGUAGE=$LANGUAGE_CODE
 cat ./${LANGUAGE}-dump-data/chunks/*.results > ./${LANGUAGE}-dump-data/results.txt
 

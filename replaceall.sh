@@ -1,5 +1,5 @@
 #!/bin/bash
-LANGUAGE=`cat language-code.cfg`
+LANGUAGE=$LANGUAGE_CODE
 excepttitle=`cat ${LANGUAGE}/excepttitle.cfg | tr '\n' '|' | sed -r 's/\|$//' `
 exceptinside=`cat ${LANGUAGE}/exceptinside.cfg  | tr '\n' '|' | sed -r 's/\|$//'`
 #echo python core/pwb.py replace.py "\b$1\b" "$2" -search:"\"$1\"" -regex -exceptitle:"$excepttitle" -exceptinside:"$exceptinside" -always -summary:"bot: $1 > $2"

@@ -3,16 +3,13 @@ use strict;
 use warnings;
 use autodie;
 use utf8;
-
 use POSIX qw(locale_h);
 setlocale(LC_ALL, "C");
+use Env qw(LANGUAGE_CODE);
+my $languageCode = $LANGUAGE_CODE;
+
 
 binmode( STDOUT, ":utf8" );
-
-open(my $languageCodeFile,  "<:encoding(UTF-8)", "language-code.cfg" );
-my $languageCode = <$languageCodeFile>;
-close $languageCodeFile;
-
 
 my $inputfilename = "$languageCode-dump-data/results.txt";
 #my $outputfilename = "bot.txt";

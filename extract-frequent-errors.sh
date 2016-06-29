@@ -1,5 +1,5 @@
 #!/bin/bash
-LANGUAGE=`cat language-code.cfg`
+LANGUAGE=$LANGUAGE_CODE
 rm sentences_extracted.txt
 file="./${LANGUAGE}/frequent-errors"
 echo "*** Processing file: $file ***"
