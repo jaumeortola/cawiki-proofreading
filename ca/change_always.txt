@@ -938,8 +938,6 @@ docuemnt document
 "Donà un salt" "Féu un salt"
 donçs doncs
 dónen donen
-"d'ordenador" "d'ordinador"
-"d'ordenadors" "d'ordinadors"
 "d'orígen" "d'origen"
 "D'orígen" "D'origen"
 "d'origens" "d'orígens"
