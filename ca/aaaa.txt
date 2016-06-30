@@ -1,5 +1,8 @@
-paliatiu "pal·liatiu"
-paliatives "pal·liatives"
+"cancelat" "cancel·lat"
+"cancelats" "cancel·lats"
+"cancelades" "cancel·lades"
+"paliatiu" "pal·liatiu"
+"paliatives" "pal·liatives"
 reexit reeixit
 reexits reeixits
 reexida reeixida
