@@ -1,19 +1,14 @@
+"malos entendidos" "malentendidos"
 "ha echo" "ha hecho"
 "han echo" "han hecho"
 desidad densidad
 supercie superficie
 "esta situado" "está situado"
-"esta situada" "está situada"
 "Esta situado" "Está situado"
-"Esta situada" "Está situada"
 "esta formado" "está formado"
-"esta formada" "está formada"
 "Esta formado" "Está formado"
-"Esta formada" "Está formada"
 "esta constituido" "está constituido"
-"esta constituida" "está constituida"
 "Esta constituido" "Está constituido"
-"Esta constituida" "Está constituida"
 "puesta apunto" "puesta a punto"
 construído construido
 construídos construidos
