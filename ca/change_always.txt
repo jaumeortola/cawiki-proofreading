@@ -82,7 +82,7 @@ Aixi Així
 "Aixì" "Així"
 aixo això
 Aixo Això
-aixó això 
+aixó això
 Aixó Això
 ajuntamnet ajuntament
 Ajuntamnet Ajuntament
@@ -1999,7 +1999,6 @@ oïents oients
 opocisió oposició
 opossicions oposicions
 opossició oposició
-"ordre religiós" "orde religiós"
 organizació organització
 Organizació Organització
 orígen origen

@@ -1,3 +1,16 @@
+pasant passant
+"va anr" "va anar"
+"van anr" "van anar"
+"va escriura" "va escriure"
+"l'invasió" "la invasió"
+"ha respòs" "ha respost"
+cancelaren cancel·laren
+incluït inclòs
+incluïts incosos
+incluïda inclosa
+incluïdes incloses
+"va cancelar" "va cancel·lar"
+"van cancelar" "van cancel·lar"
 "cancelat" "cancel·lat"
 "cancelats" "cancel·lats"
 "cancelades" "cancel·lades"
@@ -154,7 +167,6 @@ Tenesse Tennessee
 "Em la" "En la"
 "Em les" "En les"
 "d'oxígen" "d'oxigen"
-"la aleshores" "l'aleshores"
 "la aliança" "l'aliança"
 "la alimentació" "l'alimentació"
 "la alineació" "l'alineació"
