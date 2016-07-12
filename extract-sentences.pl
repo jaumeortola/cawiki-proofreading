@@ -76,12 +76,17 @@ foreach (@pages) {
 
 	if ($textoriginal =~ /(.{1,70})\b\Q$search_term\E\b(.{1,70})/) {
 #	if ($textoriginal =~ /(.{1,70})\ba\. ?C\.(.{1,70})/) {
-	    my $abans = $1;
-	    my $despres = $2;
+	    my $before = $1;
+	    my $after = $2;
 
-	    if ($sentencestoignore !~ /\Q$abans$search_term$despres\E/) {
-		print $ofh "$abans$search_term$despres<|>$title<|>$search_term<|>$replace_term\n";
-		print $ofh "$abans$replace_term$despres<|>y\n\n";
+	    if ($before =~/[-\/\?\&\.]$/ && $after =~ /^[\.=\-\/]/) {  #It's probably an URL
+		print "IGNORED: ".$title."\n";
+		next;
+	    }
+
+	    if ($sentencestoignore !~ /\Q$before$search_term$after\E/) {
+		print $ofh "$before$search_term$after<|>$title<|>$search_term<|>$replace_term\n";
+		print $ofh "$before$replace_term$after<|>y\n\n";
 		print "EXTRACTED FROM: ".$title."\n";
 	    } else {
 		print "IGNORED (sentence exception): ".$title."\n";

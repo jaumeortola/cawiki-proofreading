@@ -1,3 +1,6 @@
+egressat diplomat
+egressats diplomats
+egressada diplomada
 pasant passant
 "va anr" "va anar"
 "van anr" "van anar"
