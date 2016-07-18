@@ -3,6 +3,7 @@ use strict;
 use warnings;
 use autodie;
 use utf8;
+use Env qw(LANGUAGE_CODE);
 use String::Diff;
 use String::Diff qw( diff_fully diff diff_merge diff_regexp );# export functions
 
@@ -17,10 +18,7 @@ use String::Diff qw( diff_fully diff diff_merge diff_regexp );# export functions
 
 binmode( STDOUT, ":utf8" );
 
-open(my $languageCodeFile,  "<:encoding(UTF-8)", "language-code.cfg" );
-my $languageCode = <$languageCodeFile>;
-close $languageCodeFile;
-
+my $languageCode = $LANGUAGE_CODE;
 
 my $regla=$ARGV[0];
 if (!defined $regla) {
