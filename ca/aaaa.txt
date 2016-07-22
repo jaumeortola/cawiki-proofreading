@@ -1,3 +1,4 @@
+"l'acces" "l'accés"
 "\b([A]men)(ç[àa].*)\b" "\1a\2" "amençar"
 escribí escriví
 Escribí Escriví

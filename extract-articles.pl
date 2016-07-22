@@ -30,7 +30,7 @@ while (my $line = <$fh>) {
 	$ns = $1;
     }
     if ($found == 0 && $ns == 0) { 
-	if ($line =~ /(\w+\]\] és[ ,;\.])/) {
+	if ($line =~ /([Ee]s coneix com )/ && $line !~ /coneix com (a |el|els|la|les|El|Els|La|Les|un|una|uns|unes|l'|L')/) {
 	    my $word= $1;
 	    print $ofh "$word\n";
 	    print $ofh "ARTICLE: $title\n";
