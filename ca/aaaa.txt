@@ -558,7 +558,7 @@ préviament prèviament
 "coincideixen en què" "coincideixen que"
 "coincideixen en que" "coincideixen que"
 "va coincidir en que" "va coincidir que"
-"van coincidir en que" "va coincidir que"
+"van coincidir en que" "van coincidir que"
 "se centra en què" "se centra en el fet que"
 "insisteix en què" "insisteix que"
 "insisteix en que" "insisteix que"
