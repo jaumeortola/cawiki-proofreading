@@ -1,3 +1,11 @@
+"la diòcesis" "la diòcesi"
+"seva diòcesis" "seva diòcesi"
+"La diòcesis" "La diòcesi"
+seïsme sisme
+Tantmateix Tanmateix
+tantmateix tanmateix
+"Tant mateix" Tanmateix
+"tant mateix" tanmateix
 "l'acces" "l'accés"
 "\b([A]men)(ç[àa].*)\b" "\1a\2" "amençar"
 escribí escriví

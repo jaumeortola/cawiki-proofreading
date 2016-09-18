@@ -28,6 +28,11 @@ my $search_term = $ARGV[0];
 my $replace_term = $ARGV[1];
 my $search = "\"".$search_term."\"";
 
+
+#$search = "graus Richter";
+#$search_term = "graus Richter";
+#$replace_term = "en l'escala de Richter";
+
 open(my $exceptionsfile,  "<:encoding(UTF-8)", "$languageCode/excepttitle.cfg" );
 my $excepttitle = join("",<$exceptionsfile>);
 close $exceptionsfile;

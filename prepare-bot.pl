@@ -59,7 +59,7 @@ my $liniaRef=0;
 
 while (my $line = <$fh>) {
     chomp($line);
-    if ($line =~ /^(.+)<\|>(.+)<\|>(.+)<\|>(.+)$/) {
+    if ($line =~ /^(.+)<\|>(.+)<\|>(.+)<\|>(.*)$/) {
 	$context=$1;
 	$title=$2;
 	$error=$3;
