@@ -1,3 +1,13 @@
+"aun más" "aún más"
+"aun menos" "aún menos"
+"aun mejor" "aún mejor"
+"aun peor" "aún peor"
+"Aun más" "Aún más"
+"Aun menos" "Aún menos"
+"Aun mejor" "Aún mejor"
+"Aun peor" "Aún peor"
+facilmente fácilmente
+dificilmente difícilmente
 posiblidad posibilidad
 posibildad posibilidad
 posbilidad posibilidad
