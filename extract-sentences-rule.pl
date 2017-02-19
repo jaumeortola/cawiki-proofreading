@@ -17,16 +17,15 @@ my $inputfilename = "$languageCode-dump-data/results.txt";
 open( my $fh,  "<:encoding(UTF-8)", $inputfilename );
 #open( my $ofh,  ">:encoding(UTF-8)", $outputfilename );
 
-open(my $listofrulesfile,  "<:encoding(UTF-8)", "rules-to-extract.txt" );
-my $listofrules = join("",<$listofrulesfile>);
-close $listofrulesfile;
-$listofrules =~ s/ *\n/|/g;
-$listofrules =~ s/\|$//;
-
 my $regla=$ARGV[0];
 my $outputfilename=$regla;
 my $searchRuleID ="$regla";
 if (not defined $regla) {
+    open(my $listofrulesfile,  "<:encoding(UTF-8)", "rules-to-extract.txt" );
+    my $listofrules = join("",<$listofrulesfile>);
+    close $listofrulesfile;
+    $listofrules =~ s/ *\n/|/g;
+    $listofrules =~ s/\|$//;
     $regla = $listofrules;
     $outputfilename="several";
     $searchRuleID ="($listofrules)";
