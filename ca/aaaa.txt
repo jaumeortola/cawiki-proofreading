@@ -1,3 +1,5 @@
+"es conegut" "és conegut"
+"es coneguda" "és coneguda"
 perturbacions pertorbacions
 "\[\[kelvin\|kelvins\]\]" "[[kelvin|kèlvins]]" "kelvins"
 desrpés després
