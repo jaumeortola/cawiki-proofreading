@@ -1,3 +1,7 @@
+línees línies
+Línees Línies
+"buc insígnia" "vaixell insígnia"
+"bucs insígnia" "vaixells insígnia"
 "es conegut" "és conegut"
 "es coneguda" "és coneguda"
 perturbacions pertorbacions

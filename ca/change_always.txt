@@ -2872,10 +2872,13 @@ unànim unànime
 "Un espècie" "Una espècie"
 unisò uníson
 Unisò Uníson
-"universitat de Columbia" "Universitat Colúmbia"
-"Universitat de Columbia" "Universitat Colúmbia"
-"universitat de Colúmbia" "Universitat Colúmbia"
-"Universitat de Colúmbia" "Universitat Colúmbia"
+"universitat de Columbia" "Universitat de Colúmbia"
+"Universitat de Columbia" "Universitat de Colúmbia"
+"universitat de Colúmbia" "Universitat de Colúmbia"
+"Universitat Colúmbia" "Universitat de Colúmbia"
+"Universitat Columbia" "Universitat de Colúmbia"
+"universitat Colúmbia" "Universitat de Colúmbia"
+"universitat Columbia" "Universitat de Colúmbia"
 "universitat de Harvard" "Universitat Harvard"
 "Universitat de Harvard" "Universitat Harvard"
 "universitat de Yale" "Universitat Yale"
