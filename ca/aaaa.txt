@@ -1,3 +1,7 @@
+grabacions gravacions
+grabació gravació
+Grabacions Gravacions
+Grabació Gravació
 línees línies
 Línees Línies
 "buc insígnia" "vaixell insígnia"
@@ -60,7 +64,7 @@ pasant passant
 "ha respòs" "ha respost"
 cancelaren cancel·laren
 incluït inclòs
-incluïts incosos
+incluïts inclosos
 incluïda inclosa
 incluïdes incloses
 "va cancelar" "va cancel·lar"
