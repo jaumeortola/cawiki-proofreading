@@ -1,3 +1,23 @@
+"de aquests" "d'aquests"
+"soci-culturals" "socioculturals"
+"soci-cultural" "sociocultural"
+"soci-econòmics" "socioeconòmics"
+"soci-econòmic" "socioeconòmic"
+"soci-econòmiques" "socioeconòmiques"
+"soci-econòmica" "socioeconòmica"
+"soci-polítics" "sociopolítics"
+"soci-polític" "sociopolític"
+perpretada perpetrada
+perpretat perpetrat
+"persones empleades" "persones ocupades"
+divesros diversos
+divesres diverses
+interdisciplinaritat interdisciplinarietat
+"espai-temporals" "espaciotemporals"
+"espai-temporal" "espaciotemporal"
+deconstrucció desconstrucció
+deconstruccions desconstruccions
+escolpeix esculpeix
 grabacions gravacions
 grabació gravació
 Grabacions Gravacions
