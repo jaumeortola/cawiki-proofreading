@@ -1,3 +1,13 @@
+montícul monticle
+Montícul Monticle
+"Càmera de Representants" "Cambra de Representants"
+nadiva nadiua
+nadives nadiues
+"got sanguini" "vas sanguini"
+"gots sanguinis" "vasos sanguinis"
+"gots comunicants" "vasos comunicants"
+"got de precipitats" "vas de precipitats"
+"Got de precipitats" "Vas de precipitats"
 "de aquests" "d'aquests"
 "soci-culturals" "socioculturals"
 "soci-cultural" "sociocultural"
