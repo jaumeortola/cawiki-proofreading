@@ -1597,8 +1597,6 @@ instalessin "instal·lessin"
 instamnt instant
 "instant en que" "instant en què"
 "instants en que" "instants en què"
-"instrumentalista" "instrumentista"
-"instrumentalistes" "instrumentistes"
 interesant interessant
 interesants interessants
 "inter-ètnics" interètnics
