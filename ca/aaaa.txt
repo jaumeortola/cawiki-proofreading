@@ -1,3 +1,17 @@
+"per vegada primera" "per primera vegada"
+"patrimoni nét" "patrimoni net"
+"\b([Ee]l)·l(abor[àaeéi].+)\b" "\1\2" "el·laborar"
+"s'instal·les" "s'instal·lés"
+Reificació Reïficació
+reificació reïficació
+"així hi tot" "així i tot"
+"Així hi tot" "Així i tot"
+"Tot hi això" "Tot i això"
+"tot hi això" "tot i això"
+"lusità-brasiler" lusobrasiler
+"lusità-brasilers" lusobrasilers
+"lusità-brasilera" lusobrasilera
+"lusità-brasileres" lusobrasileres
 conreuada conreada
 conreuat conreat
 conreuats conreats

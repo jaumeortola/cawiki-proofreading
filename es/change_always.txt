@@ -1,3 +1,7 @@
+"esta disponible" "está disponible"
+"Esta disponible" "Está disponible"
+"este echo" "este hecho"
+"Este echo" "Este hecho"
 "aun más" "aún más"
 "aun menos" "aún menos"
 "aun mejor" "aún mejor"
