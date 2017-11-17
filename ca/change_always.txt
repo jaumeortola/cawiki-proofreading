@@ -1407,7 +1407,7 @@ Forçes Forces
 "fòrmula" "fórmula"
 "Fòrmula" "Fórmula"
 "fòrmules" "fórmules"
-"Fòrmules" "fórmules"
+"Fòrmules" "Fórmules"
 fosat fossat
 fosats fossats
 "foses nasals" "fosses nasals"
@@ -2835,7 +2835,7 @@ trobren troben
 trovaba trobava
 trovaben trobaven
 "tumor cancerigen" "tumor cancerós"
-"tumors cancerígens" "tumor cancerosos"
+"tumors cancerígens" "tumors cancerosos"
 "tutel·la" tutela
 Txequia Txèquia
 ubicus ubics

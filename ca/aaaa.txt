@@ -1,3 +1,32 @@
+"cèl·la" "cel·la"
+"Cèl·la" "Cel·la"
+galardonat guardonat
+galardonats guardonats
+galardonades guardonades
+"va ser galardonada" "va ser guardonada"
+"fou galardonada" "fou guardonada"
+"col\.legi" "col·legi"
+"Col\.legi" "Col·legi"
+"películes" "pel·lícules"
+"Películes" "Pel·lícules"
+produiex produeix
+Produiex Produeix
+depenents dependents
+naixament naixement
+"anàlisi comparatiu" "anàlisi comparativa"
+"Anàlisi comparatiu" "Anàlisi comparativa"
+pòlvora pólvora
+pòlvores pólvores
+solicitaren sol·licitaren
+solicità sol·licità
+"Va solicitar" "Va sol·licitar"
+"va dónar" "va donar"
+"van dónar" "van donar"
+"de dónar" "de donar"
+fraticida fratricida
+fraticides fratricides
+Fraticida Fratricida
+Fraticides Fratricides
 "per vegada primera" "per primera vegada"
 "patrimoni nét" "patrimoni net"
 "\b([Ee]l)·l(abor[àaeéi].+)\b" "\1\2" "el·laborar"
