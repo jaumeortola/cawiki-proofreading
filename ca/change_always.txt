@@ -2731,6 +2731,13 @@ surgiren sorgiren
 surgí sorgí
 surgit sorgit
 surgits sorgits
+Surgeixen Sorgeixen
+Surgeix Sorgeix
+Surgides Sorgides
+Surgiren Sorgiren
+Surgí Sorgí
+Surgit Sorgit
+Surgits Sorgits
 "sur-oest" "sud-oest"
 sustrats substrats
 sustrat substrat

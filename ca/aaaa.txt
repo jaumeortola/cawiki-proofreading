@@ -1,3 +1,24 @@
+carrilló carilló
+Carrilló Carilló
+nomeclatura nomenclatura
+Nomeclatura Nomenclatura
+poseeïx posseeix
+"poseeïx" "posseeix"
+poseïr posseir
+Poseïr Posseir
+viatgar viatjar
+"el estat" "l'estat"
+"El estat" "L'estat"
+"el Estat" "l'Estat"
+"El Estat" "L'Estat"
+"anti aeri" antiaeri
+"anti aeris" antiaeris
+"anti aèria" antiaèria
+"anti aèries" antiaèries
+"anti-aeri" antiaeri
+"anti-aeris" antiaeris
+"anti-aèria" antiaèria
+"anti-aèries" antiaèries
 "cèl·la" "cel·la"
 "Cèl·la" "Cel·la"
 galardonat guardonat
@@ -101,6 +122,12 @@ Línees Línies
 "bucs insígnia" "vaixells insígnia"
 "es conegut" "és conegut"
 "es coneguda" "és coneguda"
+"Es conegut" "És conegut"
+"Es coneguda" "És coneguda"
+"son coneguts" "són coneguts"
+"son conegudes" "son conegudes"
+"Son coneguts" "Són coneguts"
+"Son conegudes" "Son conegudes"
 perturbacions pertorbacions
 "\[\[kelvin\|kelvins\]\]" "[[kelvin|kèlvins]]" "kelvins"
 desrpés després
