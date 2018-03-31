@@ -921,11 +921,11 @@ divertimemt divertiment
 divesos diversos
 docns doncs
 docuemnt document
-"dóna a un patí" "dóna a un pati"
-"dona lloc" "dóna lloc"
-"Dona lloc" "Dóna lloc"
-"dona nom" "dóna nom"
-"Dona nom" "Dóna nom"
+#"dóna a un patí" "dóna a un pati"
+#"dona lloc" "dóna lloc"
+#"Dona lloc" "Dóna lloc"
+#"dona nom" "dóna nom"
+#"Dona nom" "Dóna nom"
 "donar la volta al món" "fer la volta al món"
 "donar passes" "fer passes"
 "donar passos" "fer passos"

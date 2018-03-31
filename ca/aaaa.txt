@@ -1,3 +1,139 @@
+"és considera" "es considera"
+"És considera" "És considera"
+encarreg encàrrec
+encàrreg encàrrec
+Encàrreg Encàrrec
+Encarreg Encàrrec
+"la època" "l'època"
+llargaria llargària
+fotovoltàiques fotovoltaiques
+fotovoltàica fotovoltaica
+"l'inauguració" "la inauguració"
+"L'inauguració" "La inauguració"
+Contígua Contigua
+contígua contigua
+contígües contigües
+contígues contigües
+fenómen fenomen
+"Galileu Galilei" "Galileo Galilei"
+"de per si mateix" "per si mateix"
+"de per si mateixa" "per si mateixa"
+"de per si mateixos" "per si mateixos"
+"de per si mateixes" "per si mateixes"
+infromació informació
+Infromació Informació
+altostrat altoestrat
+altostrats altoestrats
+angiospasme angioespasme
+angiospasmes angioespasmes
+angiospasmòdic angioespasmòdic
+angiospasmòdica angioespasmòdica
+angiospasmòdics angioespasmòdics
+angiospasmòdiques angioespasmòdiques
+arteriosclerosi arterioesclerosi
+arterioscleròtic arterioescleròtic
+arterioscleròtica arterioescleròtica
+arterioscleròtics arterioescleròtics
+arterioscleròtiques arterioescleròtiques
+arteriospasme arterioespasme
+arteriospasmes arterioespasmes
+astable anestable
+astables anestables
+bacteriostàtic bacterioestàtic
+bacteriostàtica bacterioestàtica
+bacteriostàtics bacterioestàtics
+bacteriostàtiques bacterioestàtiques
+biospeleologia bioespeleologia
+biostratigrafia bioestratigrafia
+biostratigràfic bioestratigràfic
+biostratigràfica bioestratigràfica
+biostratigràfics bioestratigràfics
+biostratigràfiques bioestratigràfiques
+broncospirometria broncoespirometria
+cardiospasme cardioespasme
+cardiospasmes cardioespasmes
+cirrostrat cirroestrat
+cirrostrats cirroestrats
+citosquelet citoesquelet
+citosquelets citoesquelets
+citostàtic citoestàtic
+citostàtica citoestàtica
+citostàtics citoestàtics
+citostàtiques citoestàtiques
+corticosteroide corticoesteroide
+corticosteroides corticoesteroides
+cronostratigrafia cronoestratigrafia
+cronostratigràfic cronoestratigràfic
+cronostratigràfica cronoestratigràfica
+cronostratigràfics cronoestratigràfics
+cronostratigràfiques cronoestratigràfiques
+dermatosquelet dermatoesquelet
+dermatosquelets dermatoesquelets
+electrostàtic electroestàtic
+electrostàtica electroestàtica
+electrostàtics electroestàtics
+electrostàtiques electroestàtiques
+endosquelet endoesquelet
+endosquelets endoesquelets
+exosquelet exoesquelet
+exosquelets exoesquelets
+feldspat feldespat
+feldspats feldespats
+feldspàtic feldespàtic
+feldspàtics feldespàtics
+feldspàtica feldespàtica
+feldspàtiques feldespàtiques
+feldspatoides feldespatoides
+feldspatoídic feldespatoídic
+geostacionari geoestacionari
+geostacionaris geoestacionaris
+geostacionària geoestacionària
+geostacionàries geoestacionàries
+grafospasme grafoespasme
+grafostàtica grafoestàtica
+hidrostàtic hidroestàtic
+hidrostàtica hidroestàtica
+hidrostàtics hidroestàtics
+hidrostàtiques hidroestàtiques
+isospín isoespín
+litostratigrafia litoestratigrafia
+magnetostàtic magnetoestàtic
+magnetostàtica magnetoestàtica
+magnetostàtics magnetoestàtics
+magnetostàtiques magnetoestàtiques
+magnetostratigrafia magnetoestratigrafia
+metastable metaestable
+metastables metaestables
+micasquist micaesquist
+micasquists micaesquists
+monostable monoestable
+monostables monoestables
+neurosquelet neuroesquelet
+neurosquelets neuroesquelets
+nimbostrat nimboestrat
+nimbostrats nimboestrats
+ortostàtic ortoestàtic
+ortostàtica ortoestàtica
+ortostàtics ortoestàtics
+ortostàtiques ortoestàtiques
+sismostratigrafia sismoestratigrafia
+talcosquist talcoesquist
+talcosquists talcoesquists
+termostable termoestable
+termostables termoestables
+tuberculostàtic tuberculoestàtic
+tuberculostàtics tuberculoestàtics
+tuberculostàtica tuberculoestàtica
+tuberculostàtiques tuberculoestàtiques
+"franco-flamenc" francoflamenc
+"franco-flamencs" francoflamencs
+"franco-flamenca" francoflamenca
+"franco-flamenques" francoflamenques
+subtitolat subtitulat
+subtitolats subtitulats
+subtitolada subtitulada
+subtitolades subtitulades
+subtitolar subtitular
 carrilló carilló
 Carrilló Carilló
 nomeclatura nomenclatura
@@ -86,6 +222,7 @@ montícul monticle
 Montícul Monticle
 "Càmera de Representants" "Cambra de Representants"
 nadiva nadiua
+nadivament nadiuament
 nadives nadiues
 "got sanguini" "vas sanguini"
 "gots sanguinis" "vasos sanguinis"
