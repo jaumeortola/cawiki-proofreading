@@ -1,3 +1,13 @@
+"mols altres" "molts altres"
+"hi ha prou amb" "n'hi ha prou amb"
+"Hi ha prou amb" "N'hi ha prou amb"
+"cap a allà" "cap allà"
+"cap a allí" "cap allí"
+"cap a ací" "cap ací"
+"cap a enrere" "cap enrere"
+"cap a endarrere" "cap endarrere"
+"cap a endavant" "cap endavant"
+"cap a arrere" "cap arrere"
 "l'individuu" "l'individu"
 2on 2n
 3er 3r
@@ -89,6 +99,8 @@ Ajuntamnet Ajuntament
 Ajuntamnet Ajuntament
 "a la seua vegada" "al seu torn"
 "a la seva vegada" "al seu torn"
+"A la seua vegada" "Al seu torn"
+"A la seva vegada" "Al seu torn"
 "al darrera" "al darrere"
 "Al darrera" "Al darrere"
 "al edifici" "a l'edifici"
@@ -126,6 +138,12 @@ al·legals alegals
 alleugir alleugerir
 Alliberamnet Alliberament
 Alliberamnet Alliberament
+"al llar de" "al llarg de"
+"al llar del" "al llarg del"
+"al llar dels" "al llarg dels"
+"Al llar de" "Al llarg de"
+"Al llar del" "Al llarg del"
+"Al llar dels" "Al llarg dels"
 "al llarc" "al llarg"
 "al llargs" "al llarg"
 "all llarg" "al llarg"
@@ -530,6 +548,8 @@ composà compongué
 Composà Compongué
 composada composta
 composades compostes
+Composada Composta
+Composades Compostes
 composadora componedora
 composador componedor
 composadores componedores
@@ -544,6 +564,8 @@ composar compondre
 composaren compongueren
 composat compost
 composats composts
+Composat Compost
+Composats Composts
 composava componia
 composaven componien
 composem componem
@@ -1110,27 +1132,19 @@ escanys escons
 "es caracteritza per que" "es caracteritza pel fet que"
 "Es caracteritza per que" "Es caracteritza pel fet que"
 "es caracteritza per què" "es caracteritza pel fet que"
-"es caracteritza perquè" "es caracteritza pel fet que"
 "Es caracteritza per què" "Es caracteritza pel fet que"
-"Es caracteritza perquè" "Es caracteritza pel fet que"
 "es caracteritzava per que" "es caracteritzava pel fet que"
 "Es caracteritzava per que" "Es caracteritzava pel fet que"
 "es caracteritzava per què" "es caracteritzava pel fet que"
-"es caracteritzava perquè" "es caracteritzava pel fet que"
 "Es caracteritzava per què" "Es caracteritzava pel fet que"
-"Es caracteritzava perquè" "Es caracteritzava pel fet que"
 "es caracteritzaven per que" "es caracteritzaven pel fet que"
 "Es caracteritzaven per que" "Es caracteritzaven pel fet que"
 "es caracteritzaven per què" "es caracteritzaven pel fet que"
-"es caracteritzaven perquè" "es caracteritzaven pel fet que"
 "Es caracteritzaven per què" "Es caracteritzaven pel fet que"
-"Es caracteritzaven perquè" "Es caracteritzaven pel fet que"
 "es caracteritzen per que" "es caracteritzen pel fet que"
 "Es caracteritzen per que" "Es caracteritzen pel fet que"
 "es caracteritzen per què" "es caracteritzen pel fet que"
-"es caracteritzen perquè" "es caracteritzen pel fet que"
 "Es caracteritzen per què" "Es caracteritzen pel fet que"
-"Es caracteritzen perquè" "Es caracteritzen pel fet que"
 escarcer escarser
 escarcers escarsers
 escases escasses
@@ -1470,6 +1484,8 @@ garantitzar garantir
 garantitzat garantit
 garantitzats garantits
 garantitzen garanteixen
+garantitzin garanteixin
+garantitzi garanteixi
 génere gènere
 Génere Gènere
 genuïtat genuïnitat
@@ -2328,6 +2344,7 @@ quye que
 "raó per la que" "raó per la qual"
 "rau en que" "rau en el fet que"
 "rau en què" "rau en el fet que"
+"radica en què" "rau en el fet que"
 realemnt realment
 realizades realitzades
 realizat realitzat

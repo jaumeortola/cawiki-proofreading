@@ -314,7 +314,9 @@ Transfussions Transfusions
 Vissions Visions
 accesió accessió
 admisió admissió
+"l'admisió" "l'admissió"
 agresió agressió
+"l'agresió" "l'agressió"
 amisió amissió
 autoagresió autoagressió
 autoregresió autoregressió
@@ -333,6 +335,7 @@ digresió digressió
 dimisió dimissió
 discusió discussió
 emisió emissió
+"l'emisió" "l'emissió"
 escisió escissió
 excusió excussió
 expresió expressió

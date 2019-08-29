@@ -3,6 +3,7 @@ use MediaWiki::Bot;
 my $bot = MediaWiki::Bot->new({
     assert      => 'bot',
     host        => 'ca.wikipedia.org',
+    operator    => 'Jaumeortola',
 });
 
 use strict;
@@ -20,15 +21,20 @@ my $languageCode = $LANGUAGE_CODE;
 binmode( STDOUT, ":utf8");
 
 
-my $search_term = "otorgar"; #$ARGV[0];
+my $search_term = "EE UU"; #$ARGV[0];
 my $replace_term = "";  #$ARGV[1];
-my $search = $search_term;
+my $search = '\"'.$search_term.'\"';
 
 open(my $exceptionsfile,  "<:encoding(UTF-8)", "$languageCode/excepttitle.cfg" );
 my $excepttitle = join("",<$exceptionsfile>);
 close $exceptionsfile;
 $excepttitle =~ s/ *\n/|/g;
 $excepttitle =~ s/\|$//;
+
+open(my $sentencesexceptionsfile,  "<:encoding(UTF-8)", "$languageCode/whitelist-extracted-sentences" );
+my $sentencestoignore = join ("", <$sentencesexceptionsfile>);
+close $sentencesexceptionsfile;
+
 
 my $outputfilename = "sentences_extracted.txt"; #"regla_".$search_term.".txt";
 open( my $ofh,  ">:encoding(UTF-8)", $outputfilename );
@@ -65,20 +71,26 @@ foreach (@pages) {
 
 
 
-	if ($textoriginal =~ /(.{1,70})\b([Oo]torg.+?)\b(.{1,70})/) {
+	if ($textoriginal =~ /(.{1,70})\b(EE\.?(&nbsp;| )?UU\.?)(.{1,70})/) {
 #	if ($textoriginal =~ /(.{1,70})\ba\. ?C\.(.{1,70})/) {
-	    my $abans = $1;
-	    my $despres = $3;
+	    my $before = $1;
+	    my $after = $4;
             my $original_term = $2;
 	    $replace_term= $original_term;
 
-	    print "$1 $2 $3\n";
-            $replace_term =~ s/^O(.+)$/A$1/;
-            $replace_term =~ s/^o(.+)$/a$1/;
+	    #print "$1 $2 $3\n";
+            $replace_term = "EUA";
+            #$replace_term =~ s/^o(.+)$/a$1/;
 	    
-	    print $ofh "$abans$original_term$despres<|>$title<|>$search_term<|>$replace_term\n";
-	    print $ofh "$abans$replace_term$despres<|>y\n\n";
-	    print "EXTRET: ".$title."\n";
+	    if ($sentencestoignore !~ /\Q$before$original_term$after\E/) {
+		print $ofh "$before$original_term$after<|>$title<|>$search_term<|>$replace_term\n";
+		print $ofh "$before$replace_term$after<|>y\n\n";
+		print "EXTRACTED FROM: ".$title."\n";
+	    } else {
+		print "IGNORED (sentence exception): ".$title."\n";
+	    }
+
+	    
 	}
     }
 }

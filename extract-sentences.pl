@@ -9,6 +9,7 @@ my $wiki = "$languageCode.wikipedia.org";
 my $bot = MediaWiki::Bot->new({
     assert      => 'bot',
     host        => $wiki,
+    operator    => 'Jaumeortola',
 });
 
 use strict;
@@ -27,7 +28,7 @@ binmode(STDOUT, ":utf8");
 my $search_term = $ARGV[0];
 my $replace_term = $ARGV[1];
 my $search = "\"".$search_term."\"";
-
+#my $search = "\"a coves\"";
 
 #$search = "graus Richter";
 #$search_term = "graus Richter";

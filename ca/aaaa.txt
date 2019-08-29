@@ -1,5 +1,241 @@
+"Càmara de Comerç" "Cambra de Comerç"
+"època hel·lenista" "època hel·lenística"
+alesores aleshores
+"excel.lent" "excel·lent"
+"excel.lents" "excel·lents"
+"Excel.lent" "Excel·lent"
+"Excel.lents" "Excel·lents"
+"volta de creuria" "volta de creueria"
+"requereix d'un" "requereix un"
+"Requereix d'un" "Requereix un"
+"post-producció" "postproducció"
+estatunitenc estatunidenc
+estatunitencs estatunidencs
+estatunitenca estatunidenca
+estatunitenques estatunidenques
+"mil.lenni" "mil·lenni"
+"apel.lació" "apel·lació"
+"pàl.lid" "pàl·lid"
+"semicèl.lules" "semicèl·lules"
+"Paral.lelament" "Paral·lelament"
+"paral.lelament" "paral·lelament"
+"medul.la" "medul·la"
+"fol.licle" "fol·licle"
+"medul.les" "medul·les"
+"fol.licles" "fol·licles"
+"excel.lir" "excel·lir"
+"al.lusions" "al·lusions"
+"el.líptica" "el·líptica"
+"intel.ligents" "intel·ligents"
+"col.locada" "col·locada"
+"col.locat" "col·locat"
+"col.locades" "col·locades"
+"col.locats" "col·locats"
+"col.locar" "col·locar"
+"metàl.liques" "metàl·liques"
+"metàl.lic" "metàl·lic"
+"metàl.lics" "metàl·lics"
+"metàl.lica" "metàl·lica"
+"intercel.lulars" "intercel·lulars"
+"intercel.lular" "intercel·lular"
+"il.luminar" "il·luminar"
+"il.luminat" "il·luminat"
+"il.luminats" "il·luminats"
+"il.luminada" "il·luminada"
+"il.luminades" "il·luminades"
+"l'ull esquerra" "l'ull esquerre"
+"Un exemple clar n'és" "N'és un exemple clar"
+"Un exemple n'és" "N'és un exemple"
+assitir assistir
+concretitzar concretar
+estrucutra estructura
+"l'estrucutra" "l'estructura"
+"Co-guionista" "Coguionista"
+"co-guionista" "coguionista"
+"afro-americà" "afroamericà"
+"afro-americans" "afroamericans"
+"afro-americana" "afroamericana"
+"afro-americanes" "afroamericanes"
+"Afro-americà" "Afroamericà"
+"Afro-americans" "Afroamericans"
+"Afro-americana" "Afroamericana"
+"Afro-americanes" "Afroamericanes"
+"Compta amb una superfície" "Té una superfície"
+"a jornada complerta" "a jornada completa"
+"es va fer amb el premi" "va guanyar el premi"
+"viu a zones" "viu en zones"
+"viu a boscos" "viu en boscos"
+"viu a rius" "viu en rius"
+"viu a llacs" "viu en llacs"
+"viu a estanys" "viu en estanys"
+"viu a regions" "viu en regions"
+"viu a països" "viu en països"
+"viu a hàbitats" "viu en hàbitats"
+"Viu a zones" "Viu en zones"
+"Viu a boscos" "Viu en boscos"
+"Viu a rius" "Viu en rius"
+"Viu a llacs" "Viu en llacs"
+"Viu a estanys" "Viu en estanys"
+"Viu a regions" "Viu en regions"
+"Viu a països" "Viu en països"
+"Viu a hàbitats" "Viu en hàbitats"
+"viuen a zones" "viuen en zones"
+"viuen a boscos" "viuen en boscos"
+"viuen a riuens" "viuen en riuens"
+"viuen a llacs" "viuen en llacs"
+"viuen a estanys" "viuen en estanys"
+"viuen a regions" "viuen en regions"
+"viuen a països" "viuen en països"
+"viuen a hàbitats" "viuen en hàbitats"
+"Viuen a zones" "Viuen en zones"
+"Viuen a boscos" "Viuen en boscos"
+"Viuen a riuens" "Viuen en riuens"
+"Viuen a llacs" "Viuen en llacs"
+"Viuen a estanys" "Viuen en estanys"
+"Viuen a regions" "Viuen en regions"
+"Viuen a països" "Viuen en països"
+"Viuen a hàbitats" "Viuen en hàbitats"
+"Real Decret" "Reial decret"
+"Real decret" "Reial decret"
+"real decret" "reial decret"
+belicisme bel·licisme
+"l'enclau" "l'enclavament"
+"en una certa mesura" "en certa manera"
+"En una certa mesura" "En certa manera"
+"en una certa mida" "en certa manera"
+"En una certa mida" "En certa manera"
+"en bona mesura" "en bona part"
+"en bona mida" "en bona part"
+"en gran mesura" "en gran manera"
+"en gran mida" "en gran manera"
+"en certa mesura" "en certa manera"
+"en certa mida" "en certa manera"
+"En bona mesura" "En bona part"
+"En bona mida" "En bona part"
+"En gran mesura" "En gran manera"
+"En gran mida" "En gran manera"
+"En certa mesura" "En certa manera"
+"En certa mida" "En certa manera"
+"l’eradicació" "l’erradicació"
+"l'eradicació" "l'erradicació"
+eradicant erradicant
+eradicada erradicada
+eradicarien erradicarien
+eradicaria erradicaria
+eradicacions erradicacions
+eradicava erradicava
+"s'eradicava" "s'erradicava"
+"s'eradicà" "s'erradicà"
+eradicat erradicat
+"S'eradiquen" "S'erradiquen"
+eradiquessin erradiquessin
+eradicaran erradicaran
+"s'eradiquin" "s'erradiquin"
+"s'eradiqués" "s'erradiqués"
+"d’eradicació" "d’erradicació"
+"el suficientment" "prou"
+"en menor mesurada" "en menor mesura"
+"en major mesurada" "en major mesura"
+"en gran mesurada" "en gran mesura"
+"en cas de que" "en cas que"
+"En cas de que" "En cas que"
+seveix serveix
+seveixen serveixen
+paissos països
+precició precisió
+Precició Precisió
+"com a molt tard" "a tot tardar"
+"dels hematies" "de les hematies"
+"els hematies" "les hematies"
+"matèria prima" "matèria primera"
+"matèries primes" "matèries primeres"
+"posta en escena" "posada en escena"
+"posta en marxa" "posada en marxa"
+"Posta en marxa" "Posada en marca"
+"Posta en escena" "Posada en escena"
+eradicà erradicà
+eradicaren erradicaren
+Eradicà Erradicà
+eradica erradica
+Eradicar Erradicar
+eradicat erradicat
+eradicats erradicats
+eradicada erradicada
+eradicades erradicades
+eradiqués erradiqués
+eradiquin erradiquin
+"d'eradicar" "d'erradicar"
+Eradicaren Erradicaren
+"eradicar" "erradicar"
+eradicació erradicació
+Eradicació Erradicació
+"l'eradicació" "l'erradicació"
+"l'Eradicació" "l'Erradicació"
+"L'eradicació" "L'erradicació"
+"d'eradicació" "d'erradicació"
+"d'Eradicació" "d'Erradicació"
+"costarriqueny" "costa-riqueny"
+"costarriquenya" "costa-riquenya"
+"costarriquenys" "costa-riquenys"
+"costarriquenyes" "costa-riquenyes"
+"entre les quals s'hi troben" "entre les quals es troben"
+"entre els quals s'hi troben" "entre els quals es troben"
+"s'exté" "s'estén"
+"s'extén" "s'estén"
+"S'extén" "S'estén"
+"S'exté" "S'estén"
+"creuar el riu" "travessar el riu"
+"creuar la frontera" "travessar la frontera"
+"creuar la via" "travessar la via"
+"creuar el camí" "travessar el camí"
+"creuar la carretera" "travessar la carretera"
+"creuar l'autopista" "travessar l'autopista"
+"la seva residencia" "la seva residència"
+bióleg biòleg
+nidada niuada
+nidades niuades
+nidadas niuades
+"Compta amb tot tipus de" "Disposa de tota mena de"
+assessí assasí
+assessins assassins
+assessinat assassinat
+Assessinat Assassinat
+"és caracteritza" "es caracteritza"
+"És caracteritza" "Es caracteritza"
+"va ser construida" "va ser construïda"
+"va ser construit" "va ser construït"
+"es troba situat" "està situat"
+"es troba situada" "està situada"
+"es troben situats" "estan situats"
+"es troben situades" "estan situades"
+"Es troba situat" "Està situat"
+"Es troba situada" "Està situada"
+"Es troben situats" "Estan situats"
+"Es troben situades" "Estan situades"
+"Es troba enclavat" "Està enclavat"
+"es troba enclavat" "està enclavat"
+"Es troba enclavada" "Està enclavada"
+"es troba enclavada" "està enclavada"
+"es troben enclavades" "estan enclavades"
+"un aigua" "una aigua"
+"un acta" "una acta"
+"Un acta" "Una acta"
+"un àguila" "una àguila"
+"un ansa" "una ansa"
+"un au" "una au"
+"un aula" "una aula"
+"un ànima" "una ànima"
+Veugeu Vegeu
+"Regna Sofia" "Reina Sofia"
+"Romà Germànic" "Romanogermànic"
+"Romà-Germànic" "Romanogermànic"
+"Imperi romà germànic" "Imperi Romanogermànic"
+paissatge paisatge
+paissatges paisatges
+Paissatge Paisatge
+Paissatges Paisatges
 "és considera" "es considera"
-"És considera" "És considera"
+"És considera" "Es considera"
 encarreg encàrrec
 encàrreg encàrrec
 Encàrreg Encàrrec
@@ -39,10 +275,10 @@ arteriospasme arterioespasme
 arteriospasmes arterioespasmes
 astable anestable
 astables anestables
-bacteriostàtic bacterioestàtic
-bacteriostàtica bacterioestàtica
-bacteriostàtics bacterioestàtics
-bacteriostàtiques bacterioestàtiques
+bacterioestàtic bacteriostàtic
+bacterioestàtica bacteriostàtica
+bacterioestàtics bacteriostàtics
+bacterioestàtiques bacteriostàtiques
 biospeleologia bioespeleologia
 biostratigrafia bioestratigrafia
 biostratigràfic bioestratigràfic
@@ -56,10 +292,10 @@ cirrostrat cirroestrat
 cirrostrats cirroestrats
 citosquelet citoesquelet
 citosquelets citoesquelets
-citostàtic citoestàtic
-citostàtica citoestàtica
-citostàtics citoestàtics
-citostàtiques citoestàtiques
+citoestàtic citostàtic
+citoestàtica citostàtica
+citoestàtics citostàtics
+citoestàtiques citostàtiques
 corticosteroide corticoesteroide
 corticosteroides corticoesteroides
 cronostratigrafia cronoestratigrafia
@@ -112,19 +348,19 @@ neurosquelet neuroesquelet
 neurosquelets neuroesquelets
 nimbostrat nimboestrat
 nimbostrats nimboestrats
-ortostàtic ortoestàtic
-ortostàtica ortoestàtica
-ortostàtics ortoestàtics
-ortostàtiques ortoestàtiques
+ortoestàtic ortostàtic
+ortoestàtica ortostàtica
+ortoestàtics ortostàtics
+ortoestàtiques ortostàtiques
 sismostratigrafia sismoestratigrafia
 talcosquist talcoesquist
 talcosquists talcoesquists
 termostable termoestable
 termostables termoestables
-tuberculostàtic tuberculoestàtic
-tuberculostàtics tuberculoestàtics
-tuberculostàtica tuberculoestàtica
-tuberculostàtiques tuberculoestàtiques
+tuberculoestàtic tuberculostàtic
+tuberculoestàtics tuberculostàtics
+tuberculoestàtica tuberculostàtica
+tuberculoestàtiques tuberculostàtiques
 "franco-flamenc" francoflamenc
 "franco-flamencs" francoflamencs
 "franco-flamenca" francoflamenca
@@ -427,6 +663,10 @@ Besnetes Besnétes
 "comptava amb ((uns )?[0-9\.,]+ (\[?\[?habitants\]?\]?|batejats|\[\[habitant\]\]s|\[\[habitant\|habitants\]\]))" "tenia \1" "\"comptava amb\" habitants"
 "comptava amb ([0-9\.,]+ (\[?\[?habitants\]?\]?|batejats))" "tenia \1" "\"comptava amb\" habitants"
 "comptava amb ([0-9\.,]+ (habitants|batejats))" "tenia \1" "\"comptava amb\" batejats"
+"Compta amb ([0-9\.,]+ (municipis|cantons))" "Té \1" "\"compta amb\" municipis"
+"compta amb ([0-9\.,]+ (municipis|cantons))" "té \1" "\"compta amb\" municipis"
+"Compta amb ([0-9\.,]+ (municipis|cantons))" "Té \1" "\"compta amb\" cantons"
+"compta amb ([0-9\.,]+ (municipis|cantons))" "té \1" "\"compta amb\" cantons"
 "La '''Associació" "L{{'}}'''Associació" "\"la associació\""
 "la associació" "l'associació"
 "la Associació" "l'Associació"
@@ -611,7 +851,7 @@ comunment comunament
 "\b([Mm]o)v(ilitz.*)\b" "\1b\2" "movilitzar"
 "\b([Ii]mprovi)tz(.*)\b" "\1s\2" "improvitzar"
 exècit exèrcit
-"se'n feu" "se'n féu"
+#"se'n feu" "se'n féu"
 titolat titulat
 titolada titulada
 titolats titulats
