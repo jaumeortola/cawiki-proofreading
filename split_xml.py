@@ -85,4 +85,4 @@ def split_xml(filename, maxlines_per_chunk, folder):
 
 if __name__ == '__main__':
     # When the script is self run
-    split_xml('frwiki-latest-pages-articles.xml', 11700000, "fr-dump-data")
+    split_xml('cawiki-latest-pages-articles.xml', 13000000, "ca-dump-data")
