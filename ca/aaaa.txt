@@ -1,3 +1,52 @@
+"A nivell econòmic" "En l'àmbit econòmic"
+"a nivell econòmic" "en l'àmbit econòmic"
+"A nivell polític" "En l'àmbit polític"
+"a nivell polític" "en l'àmbit polític"
+"A nivell social" "En l'àmbit social"
+"a nivell social" "en l'àmbit social"
+"A nivell científic" "En l'àmbit científic"
+"a nivell científic" "en l'àmbit científic"
+"col•lectivament" "col·lectivament"
+"mitjan de segle" "mitjan segle"
+"la més comú" "la més comuna"
+"La més comú" "La més comuna"
+"les més comuns" "les més comunes"
+"Les més comuns" "Les més comunes"
+prinicipi principi
+prinicipis principis
+"és considerava" "es considerava"
+"Corregués della Sera" "Corriere della Sera"
+"Corregués della Sàrria" "Corriere della Sera"
+trasplant trasplantament
+trasplants trasplantaments
+Trasplant Trasplantament
+Trasplants Trasplantaments
+"semi autònom" "semiautònom"
+"semi-autònom" "semiautònom"
+"semi autònoms" "semiautònoms"
+"semi-autònoms" "semiautònoms"
+"semi autònoma" "semiautònoma"
+"semi-autònoma" "semiautònoma"
+"semi autònomes" "semiautònomes"
+"semi-autònomes" "semiautònomes"
+móns mons
+resenyes ressenyes
+resenya ressenya
+Càucas Caucas
+"cinema negra" "cinema negre"
+colegues col·legues
+"l'apariència" "l'aparença"
+"L'apariència" "L'aparença"
+"al capdemunt" "al capdamunt"
+"Al capdemunt" "Al capdamunt"
+allindat allindanat
+allindats allindanats
+allindada allindanada
+allindades allindanades
+"d'adalt" "de dalt"
+al·lucinogens al·lucinògens
+arcedià ardiaca
+"l'arcedià" "l'ardiaca"
 "Càmara de Comerç" "Cambra de Comerç"
 "època hel·lenista" "època hel·lenística"
 alesores aleshores
@@ -46,6 +95,7 @@ estatunitenques estatunidenques
 "l'ull esquerra" "l'ull esquerre"
 "Un exemple clar n'és" "N'és un exemple clar"
 "Un exemple n'és" "N'és un exemple"
+"un exemple n'és" "n'és un exemple"
 assitir assistir
 concretitzar concretar
 estrucutra estructura
@@ -491,8 +541,10 @@ Grabacions Gravacions
 Grabació Gravació
 línees línies
 Línees Línies
-"buc insígnia" "vaixell insígnia"
-"bucs insígnia" "vaixells insígnia"
+"buc de guerra" "vaixell de guerra"
+"bucs de guerra" "vaixells de guerra"
+"buc insígnia" "vaixell almirall"
+"bucs insígnia" "vaixells almirall"
 "es conegut" "és conegut"
 "es coneguda" "és coneguda"
 "Es conegut" "És conegut"
