@@ -208,6 +208,9 @@ anulant anul·lant
 anularen anul·laren
 "any en el que" "any en què"
 "any en que" "any en què"
+"data en la que" "data en què"
+"data en la què" "data en què"
+"data en que" "data en què"
 "any i mitjà" "any i mig"
 "anys desprès" "anys després"
 "anys en que" "anys en què"
@@ -1157,6 +1160,11 @@ escrire escriure
 escrti escrit
 escruire escriure
 escrure escriure
+"son deguts" "són deguts"
+"son degudes" "són degudes"
+"es degut" "és degut"
+"es deguda" "és deguda"
+"Es degut" "És degut"
 "és degut a que" "és degut al fet que"
 "es deu a que" "es deu al fet que"
 "es devia a que" "es devia al fet que"
@@ -1979,7 +1987,6 @@ Neixia Naixia
 neixien naixien
 Neixien Naixien
 nesqué nasqué
-"net del rei" "nét del rei"
 níexer néixer
 "Nom amb el que" "Nom amb el qual"
 "nom complert" "nom complet"
@@ -1992,6 +1999,10 @@ nordamericà nord-americà
 Nordamericà Nord-americà
 nordamericans nord-americans
 Nordamericans Nord-americans
+nordamericanes nord-americanes
+nordamericana nord-americana
+Nordamericanes Nord-americanes
+Nordamericana Nord-americana
 nordest nord-est
 nordoest nord-oest
 normalemnt normalment

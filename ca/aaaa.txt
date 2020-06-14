@@ -1,3 +1,9 @@
+"seva historia" "seva història"
+"seua historia" "seua història"
+"Al llarg de la historia" "Al llarg de la història"
+"al llarg de la historia" "al llarg de la història" 
+"ull nuu" "ull nu"
+"d'Stanford" "de Stanford"
 "A nivell econòmic" "En l'àmbit econòmic"
 "a nivell econòmic" "en l'àmbit econòmic"
 "A nivell polític" "En l'àmbit polític"
@@ -596,7 +602,7 @@ tantmateix tanmateix
 "tant mateix" tanmateix
 "l'acces" "l'accés"
 "\b([A]men)(ç[àa].*)\b" "\1a\2" "amençar"
-escribí escriví
+#escribí escriví
 Escribí Escriví
 egressat diplomat
 egressats diplomats
