@@ -1,3 +1,33 @@
+Enginyería Enginyeria
+enginyería enginyeria
+"la enginyeria" "l'enginyeria"
+recòrrer recórrer
+còrrer córrer
+col·lònia colònia
+col·lònies colònies
+col·lonial colonial
+col·lonials colonials
+Col·lònia Colònia
+Col·lònies Colònies
+Col·lonial Colonial
+Col·lonials Colonials
+trencaigües trancaaigües
+trencaigues trancaaigües
+trencaaigues trancaaigües
+"avió a reacció" "avió de reacció"
+"avions a reació" "avions de reacció"
+"motor a reacció" "motor de reacció"
+"motors a reacció" "motors de reacció"
+"caça a reacció" "caça de reacció"
+"caces a reacció" "caces de reacció"
+"Estats Untis" "Estats Units"
+"son considerats" "són considerats"
+"es considerat" "és considerat"
+"Es considerat" "És considerat"
+pretenciós pretensiós
+pretenciosa pretensiosa
+pretenciosos pretensiosos
+pretencioses pretensioses
 "seva historia" "seva història"
 "seua historia" "seua història"
 "Al llarg de la historia" "Al llarg de la història"
@@ -45,10 +75,10 @@ colegues col·legues
 "L'apariència" "L'aparença"
 "al capdemunt" "al capdamunt"
 "Al capdemunt" "Al capdamunt"
-allindat allindanat
-allindats allindanats
-allindada allindanada
-allindades allindanades
+allindat "de llinda"
+allindats "de llinda"
+allindada "de llinda"
+allindades "de llinda"
 "d'adalt" "de dalt"
 al·lucinogens al·lucinògens
 arcedià ardiaca
@@ -705,14 +735,14 @@ mol·lècula molècula
 mol·lècules molècules
 Mol·lècula Molècula
 Mol·lècules Molècules
-besnet besnét
-besneta besnéta
-besnets besnéts
-besnetes besnétes
-Besnet Besnét
-Besneta Besnéta
-Besnets Besnéts
-Besnetes Besnétes
+#besnet besnét
+#besneta besnéta
+#besnets besnéts
+#besnetes besnétes
+#Besnet Besnét
+#Besneta Besnéta
+#Besnets Besnéts
+#Besnetes Besnétes
 "Sub-campió" "Subcampió"
 "sub-campió" "subcampió"
 "sub-campionat" "subcampionat"
@@ -842,6 +872,7 @@ Caçces Caces
 necessitaben necessitaven
 "un promig de" "una mitjana de"
 "No obstant açò" "No obstant això"
+"Açò no obstant" "Això no obstant"
 "no obstant açò" "no obstant això"
 "Estafis Square" "Times Square"
 "New York Estafis" "New York Times"

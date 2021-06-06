@@ -1376,11 +1376,11 @@ Fés Fes
 fèsol fesol
 fèsols fesols
 "fet de que" "fet que"
-"filla i neta" "filla i néta"
-"Filla i neta" "Filla i néta"
-"fill i net" "fill i nét"
-"Fill i net" "Fill i nét"
-"fills i nets" "fills i néts"
+#"filla i neta" "filla i néta"
+#"Filla i neta" "Filla i néta"
+#"fill i net" "fill i nét"
+#"Fill i net" "Fill i nét"
+#"fills i nets" "fills i néts"
 finalemnt finalment
 "fins a aleshores" "fins aleshores"
 "Fins a aleshores" "Fins aleshores"
