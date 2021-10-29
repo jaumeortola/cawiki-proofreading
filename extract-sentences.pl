@@ -28,6 +28,7 @@ binmode(STDOUT, ":utf8");
 my $search_term = $ARGV[0];
 my $replace_term = $ARGV[1];
 my $search = "\"".$search_term."\"";
+#my $search = "insource:/".$search_term."/";
 #my $search = "\"a coves\"";
 
 #$search = "graus Richter";
@@ -50,6 +51,7 @@ open( my $ofh,  ">>:encoding(UTF-8)", $outputfilename );
 
 
 my @pages = $bot->search($search."~0", 0);
+#my @pages = $bot->search($search, 0);
 
 print "**** SEARCHING: ".$search_term." ****\n";
 
@@ -81,7 +83,8 @@ foreach (@pages) {
 
 
 	if ($textoriginal =~ /(.{1,70})\b\Q$search_term\E\b(.{1,70})/) {
-#	if ($textoriginal =~ /(.{1,70})\ba\. ?C\.(.{1,70})/) {
+#       if ($textoriginal =~ /(.{1,70})\Q$search_term\E(.{1,70})/) {
+##	if ($textoriginal =~ /(.{1,70})\ba\. ?C\.(.{1,70})/) {
 	    my $before = $1;
 	    my $after = $2;
 
