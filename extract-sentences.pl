@@ -27,8 +27,8 @@ binmode(STDOUT, ":utf8");
 
 my $search_term = $ARGV[0];
 my $replace_term = $ARGV[1];
-my $search = "\"".$search_term."\"";
-#my $search = "insource:/".$search_term."/";
+#my $search = "\"".$search_term."\"";
+my $search = "insource:/".$search_term."/";
 #my $search = "\"a coves\"";
 
 #$search = "graus Richter";

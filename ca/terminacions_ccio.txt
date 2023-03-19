@@ -12,7 +12,7 @@ abstracions abstraccions
 Abstracions Abstraccions
 #ació acció
 Ació Acció
-acions accions
+#acions accions
 Acions Accions
 addució adducció
 Addució Adducció
