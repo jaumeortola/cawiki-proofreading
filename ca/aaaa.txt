@@ -1,3 +1,12 @@
+"castellano-manxec" castellanomanxec
+"castellano-manxecs" castellanomanxecs
+"castellano-manxega" castellanomanxega
+"castellano-manxegues" castellanomanxegues
+"castellano-lleonès" castellanolleonès
+"castellano-lleonés" castellanolleonés
+"castellano-lleonesa" castellanolleonesa
+"castellano-lleonesos" castellanolleonesos
+"castellano-lleoneses" castellanolleoneses
 "del segla" "del segle"
 "al segla" "al segle"
 "el segla" "el segle"
